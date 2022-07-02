@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --teal: #09a7a1;
+  --orange: #ff8000;
+  --raspbarry: #ff007a;
+  --neon-pink: #ff14bd;
+  --cream-brown: #31202b;
+  --cyan: #00ffff;
+  --midnight-voilet: #1f242d;
+  --groung-green: #07252d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+.container .pageOne {
+  background: linear-gradient(to bottom, #d6fce4, #fdfdfd);
+}
+.container .pageOne .headerPgOne {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .pageOne .headerPgOne .leftHeader {
+  height: 100%;
+  width: 30rem;
+  /* background-color: var(--raspbarry); */
+  display: flex;
+  flex-direction: row;
+}
+.container .pageOne .headerPgOne .leftHeader .logoSvgDiv {
+  padding: 1rem 0rem 0rem 1rem;
+}
+.container .pageOne .headerPgOne .leftHeader .logoSvgDiv .svgLogo {
+  height: 5rem;
+}
+.container .pageOne .headerPgOne .leftHeader .textlogoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .pageOne .headerPgOne .leftHeader .textlogoDiv .heartPulseImgDiv .heartPulseImg {
+  height: 5.2rem;
+}
+.container .pageOne .headerPgOne .leftHeader .textlogoDiv .websiteNameDiv .websiteName {
+  margin-top: 0.4rem;
+  font-size: 1.6rem;
+}
+.container .pageOne .headerPgOne .rightHeader {
+  height: 100%;
+  width: 124rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.container .pageOne .headerPgOne .rightHeader .navBar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .pageOne .headerPgOne .rightHeader .navBar ul li {
+  margin: 2rem;
+}
+.container .pageOne .headerPgOne .rightHeader .navBar ul li button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+}
+.container .pageOne .headerPgOne .rightHeader .buttonMakeApp {
+  margin-right: 2rem;
+}
+.container .pageOne .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton {
+  cursor: pointer;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  background-color: #5bb98b;
+  border: none;
+}
+.container .pageOne .restPgOne {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 62rem;
+}
+.container .pageOne .restPgOne .leftPgOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  height: 100%;
+}
+.container .pageOne .restPgOne .leftPgOne .leftPgOneUpper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20%;
+  margin-top: 1rem;
+}
+.container .pageOne .restPgOne .leftPgOne .leftPgOneUpper p,
+.container .pageOne .restPgOne .leftPgOne .leftPgOneUpper b u {
+  font-size: 2.5rem;
+}
+.container .pageOne .restPgOne .leftPgOne .leftPgOneUpper b u {
+  color: #5bb98b;
+}
+.container .pageOne .restPgOne .leftPgOne .leftPgOneBottom {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom img {
+  border-radius: 2rem;
+  height: 43rem;
+  width: 30rem;
+}
+.container .pageOne .restPgOne .rightPgOne {
+  width: 104rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.container .pageOne .restPgOne .rightPgOne .largeImg {
+  height: 80%;
+}
+.container .pageOne .restPgOne .rightPgOne .largeImg img {
+  height: 50rem;
+  border-radius: 2rem;
+}
+.container .pageOne .restPgOne .rightPgOne .actionTab {
+  height: 20%;
+}/*# sourceMappingURL=style.css.map */

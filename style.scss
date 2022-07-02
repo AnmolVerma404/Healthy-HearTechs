@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --teal: #09a7a1;
+  --orange: #ff8000;
+  --raspbarry: #ff007a;
+  --neon-pink: #ff14bd;
+  --cream-brown: #31202b;
+  --cyan: #00ffff;
+  --midnight-voilet: #1f242d;
+  --groung-green: #07252d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  overflow: hidden;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+
+  .pageOne {
+    background: linear-gradient(to bottom, #d6fce4, #fdfdfd);
+
+    .headerPgOne {
+      height: 10rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .leftHeader {
+        height: 100%;
+        width: 30rem;
+        /* background-color: var(--raspbarry); */
+        display: flex;
+        flex-direction: row;
+
+        .logoSvgDiv {
+          padding: 1rem 0rem 0rem 1rem;
+          .svgLogo {
+            height: 5rem;
+          }
+        }
+
+        .textlogoDiv {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .heartPulseImgDiv {
+            .heartPulseImg {
+              height: 5.2rem;
+            }
+          }
+
+          .websiteNameDiv {
+            .websiteName {
+              margin-top: 0.4rem;
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+
+      .rightHeader {
+        height: 100%;
+        width: 124rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        // background-color: var(--cream-brown);
+
+        .navBar {
+          ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li {
+              margin: 2rem;
+              button {
+                cursor: pointer;
+                font-size: 1.5rem;
+                font-weight: 500;
+                background-color: transparent;
+                border: none;
+                padding: 1rem;
+              }
+            }
+          }
+        }
+        .buttonMakeApp {
+          margin-right: 2rem;
+          .makeAppointmentButton {
+            cursor: pointer;
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+            font-size: 1.5rem;
+            background-color: #5bb98b;
+            border: none;
+          }
+        }
+      }
+    }
+
+    .restPgOne {
+      /* background-color: red; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 62rem;
+
+      .leftPgOne {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50rem;
+        height: 100%;
+
+        .leftPgOneUpper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          // line-height: 2.7rem;
+          height: 20%;
+          margin-top: 1rem;
+          p,
+          b u {
+            font-size: 2.5rem;
+          }
+          b u {
+            color: #5bb98b;
+          }
+        }
+
+        .leftPgOneBottom {
+          height: 80%;
+          display: flex;
+          // flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .imgleftPgOneBottom {
+            img {
+              border-radius: 2rem;
+              height: 43rem;
+              width: 30rem;
+            }
+          }
+        }
+      }
+      .rightPgOne {
+        width: 104rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        .largeImg {
+          height: 80%;
+
+          img {
+            height: 50rem;
+            border-radius: 2rem;
+          }
+        }
+
+        .actionTab {
+          height: 20%;
+        }
+      }
+    }
+  }
+}
