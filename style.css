@@ -129,10 +129,14 @@
   justify-content: center;
   align-items: center;
 }
+.container .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom {
+  padding: 1rem;
+}
 .container .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom img {
   border-radius: 2rem;
   height: 43rem;
   width: 30rem;
+  box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
 }
 .container .pageOne .restPgOne .rightPgOne {
   width: 104rem;
@@ -144,12 +148,31 @@
   margin-top: 1rem;
 }
 .container .pageOne .restPgOne .rightPgOne .largeImg {
-  height: 80%;
+  height: 85%;
 }
 .container .pageOne .restPgOne .rightPgOne .largeImg img {
-  height: 50rem;
+  height: 48rem;
+  width: 98rem;
+  margin: 2rem;
   border-radius: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
 }
 .container .pageOne .restPgOne .rightPgOne .actionTab {
-  height: 20%;
+  height: 15%;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .pageOne .restPgOne .rightPgOne .actionTab .boxforActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  height: 80%;
+  width: 85rem;
+  box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
 }/*# sourceMappingURL=style.css.map */

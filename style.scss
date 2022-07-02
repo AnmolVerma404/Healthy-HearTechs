@@ -145,10 +145,12 @@
           justify-content: center;
           align-items: center;
           .imgleftPgOneBottom {
+            padding: 1rem;
             img {
               border-radius: 2rem;
               height: 43rem;
               width: 30rem;
+              box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
             }
           }
         }
@@ -161,17 +163,35 @@
         justify-content: center;
         align-items: center;
         margin-top: 1rem;
-        .largeImg {
-          height: 80%;
 
+        .largeImg {
+          height: 85%;
           img {
-            height: 50rem;
+            height: 48rem;
+            width: 98rem;
+            margin: 2rem;
             border-radius: 2rem;
+            object-fit: cover;
+            box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
           }
         }
 
         .actionTab {
-          height: 20%;
+          height: 15%;
+          margin-bottom: 1rem;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .boxforActions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f8f8;
+            height: 80%;
+            width: 85rem;
+            box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black
+          }
         }
       }
     }
