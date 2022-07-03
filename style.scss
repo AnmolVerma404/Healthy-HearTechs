@@ -17,7 +17,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-size: 10px;
-  overflow: hidden;
+  // overflow-y: hidden;
 }
 .container {
   height: 100vh;
@@ -25,6 +25,7 @@
 
   .pageOne {
     background: linear-gradient(to bottom, #d6fce4, #fdfdfd);
+    overflow: hidden;
 
     .headerPgOne {
       height: 10rem;
@@ -113,6 +114,7 @@
       justify-content: center;
       align-items: center;
       height: 62rem;
+      overflow-y: hidden;
 
       .leftPgOne {
         display: flex;
@@ -121,6 +123,7 @@
         align-items: center;
         width: 50rem;
         height: 100%;
+        overflow-y: hidden;
 
         .leftPgOneUpper {
           display: flex;
@@ -129,6 +132,7 @@
           // line-height: 2.7rem;
           height: 20%;
           margin-top: 1rem;
+          overflow-y: hidden;
           p,
           b u {
             font-size: 2.5rem;
@@ -144,6 +148,7 @@
           // flex-direction: column;
           justify-content: center;
           align-items: center;
+          overflow-y: hidden;
           .imgleftPgOneBottom {
             padding: 1rem;
             img {
@@ -151,6 +156,7 @@
               height: 43rem;
               width: 30rem;
               box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
+              overflow-y: hidden;
             }
           }
         }
@@ -163,9 +169,11 @@
         justify-content: center;
         align-items: center;
         margin-top: 1rem;
+        overflow-y: hidden;
 
         .largeImg {
           height: 85%;
+          overflow-y: hidden;
           img {
             height: 48rem;
             width: 98rem;
@@ -193,6 +201,134 @@
             box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black
           }
         }
+      }
+    }
+  }
+  .pageTwo {
+    background: #fdfdfd;
+    
+    .headerPgTwo {
+      height: 9rem;
+      display: flex;
+      justify-content: space-around;
+      width: 39rem;
+      margin-top: 5rem;
+
+      p {
+        font-size: 2rem;
+        color: #5bb98b;
+      }
+    }   
+
+    .restPgTwo{
+      display:contents;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 10rem;
+      overflow-y: hidden;
+
+      .leftPgTwoUpper{
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+        height: 0rem;
+        font-weight: 700;
+
+        p {
+          font-size: 2.5rem;
+          color: #000000;
+          width: 40rem;
+          padding-left: 15rem;
+          line-height: 25px;
+        }
+        b u {
+          font-size: 2.5rem;
+          color: #5bb98b;
+          width: 30rem;
+        }
+      }
+
+      .rightPgTwoUpper{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        height: 10rem;
+        width: 100%;
+        text-align: left;
+        text-overflow: ellipsis;
+
+        .rightPgTwoUpperContent{
+          padding-left: 600px;
+          width: 100%;
+
+          p {
+            width: 90%;
+            font-size: 1.5rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+
+          p:hover {
+            overflow: visible;
+          }
+        }
+
+        .buttonRead {
+          display:flex;
+          flex-direction: column;
+          justify-content:center;
+          align-items: left;
+          
+          .readMoreButton {
+            margin-top: 40px;
+            margin-bottom: 10px;
+          }
+        }
+
+      }
+
+      .pageTwoBottom {
+          display:flex;
+          position: relative;
+          flex-direction: column;
+          justify-content:flex-start;
+          align-items: center;
+          height: 45rem;
+          overflow: hidden;
+          img {
+            height: 40rem;
+            width: 155rem;
+            margin: 2rem;
+            object-fit:cover;
+            box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
+          }
+
+          p {
+            position: absolute;
+            top: 60px;
+            height: 50px;
+          }
+          
+          b{
+            font-size: 3.5rem;
+            color: #fdfdfd;
+          }
+
+          u{
+            font-size: 3.5rem;
+            color: #5bb98b;
+          }
+
+          button {
+            position: absolute;
+            top: 350px;
+            height: 30px;
+            width: 150px;
+            font-size: 1.5rem;
+          }
       }
     }
   }
