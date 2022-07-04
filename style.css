@@ -250,38 +250,24 @@
 .container .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent .rightTopContentPgTwo p {
   font-size: 1.4rem;
 }
-.container .pageTwo .restPgTwo .rightPgTwoUpper .buttonRead {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-}
-.container .pageTwo .restPgTwo .rightPgTwoUpper .buttonRead .readMoreButton {
-  margin-top: 40px;
-  margin-bottom: 10px;
-}
 .container .pageTwo .restPgTwo .pageTwoBottom {
+  background-image: url("./image/aboutUsPage.png");
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 45rem;
   overflow: hidden;
-}
-.container .pageTwo .restPgTwo .pageTwoBottom img {
   height: 40rem;
-  width: 145rem;
-  margin: 2rem;
+  width: 148rem;
+  margin: 3.5rem 5rem;
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
 }
 .container .pageTwo .restPgTwo .pageTwoBottom p {
   overflow: hidden;
-  position: absolute;
-  top: 60px;
-  height: 50px;
+  margin-top: 3rem;
+  height: 5rem;
 }
 .container .pageTwo .restPgTwo .pageTwoBottom b {
   font-size: 3.5rem;
@@ -292,9 +278,8 @@
   color: #5bb98b;
 }
 .container .pageTwo .restPgTwo .pageTwoBottom button {
-  position: absolute;
-  top: 350px;
   height: 30px;
   width: 150px;
+  margin-top: 25rem;
   font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
