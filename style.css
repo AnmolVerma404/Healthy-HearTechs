@@ -21,62 +21,62 @@
   overflow-x: hidden;
 }
 
-.container {
+.maincontainer {
   height: 100vh;
   width: 100vw;
 }
-.container .pageOne {
+.maincontainer .pageOne {
   background: linear-gradient(to bottom, #d6fce4, #fdfdfd);
   overflow: hidden;
 }
-.container .pageOne .headerPgOne {
+.maincontainer .pageOne .headerPgOne {
   height: 10rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.container .pageOne .headerPgOne .leftHeader {
+.maincontainer .pageOne .headerPgOne .leftHeader {
   height: 100%;
   width: 30rem;
   /* background-color: var(--raspbarry); */
   display: flex;
   flex-direction: row;
 }
-.container .pageOne .headerPgOne .leftHeader .logoSvgDiv {
+.maincontainer .pageOne .headerPgOne .leftHeader .logoSvgDiv {
   padding: 1rem 0rem 0rem 1rem;
 }
-.container .pageOne .headerPgOne .leftHeader .logoSvgDiv .svgLogo {
+.maincontainer .pageOne .headerPgOne .leftHeader .logoSvgDiv .svgLogo {
   height: 5rem;
 }
-.container .pageOne .headerPgOne .leftHeader .textlogoDiv {
+.maincontainer .pageOne .headerPgOne .leftHeader .textlogoDiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.container .pageOne .headerPgOne .leftHeader .textlogoDiv .heartPulseImgDiv .heartPulseImg {
+.maincontainer .pageOne .headerPgOne .leftHeader .textlogoDiv .heartPulseImgDiv .heartPulseImg {
   height: 5.2rem;
 }
-.container .pageOne .headerPgOne .leftHeader .textlogoDiv .websiteNameDiv .websiteName {
+.maincontainer .pageOne .headerPgOne .leftHeader .textlogoDiv .websiteNameDiv .websiteName {
   margin-top: 0.4rem;
   font-size: 1.6rem;
 }
-.container .pageOne .headerPgOne .rightHeader {
+.maincontainer .pageOne .headerPgOne .rightHeader {
   height: 100%;
   width: 124rem;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-.container .pageOne .headerPgOne .rightHeader .navBar ul {
+.maincontainer .pageOne .headerPgOne .rightHeader .navBar ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container .pageOne .headerPgOne .rightHeader .navBar ul li {
+.maincontainer .pageOne .headerPgOne .rightHeader .navBar ul li {
   margin: 2rem;
 }
-.container .pageOne .headerPgOne .rightHeader .navBar ul li button {
+.maincontainer .pageOne .headerPgOne .rightHeader .navBar ul li button {
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: 500;
@@ -84,10 +84,10 @@
   border: none;
   padding: 1rem;
 }
-.container .pageOne .headerPgOne .rightHeader .buttonMakeApp {
+.maincontainer .pageOne .headerPgOne .rightHeader .buttonMakeApp {
   margin-right: 2rem;
 }
-.container .pageOne .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton {
+.maincontainer .pageOne .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton {
   cursor: pointer;
   padding: 1.5rem;
   border-radius: 1.5rem;
@@ -95,7 +95,7 @@
   background-color: #5bb98b;
   border: none;
 }
-.container .pageOne .restPgOne {
+.maincontainer .pageOne .restPgOne {
   /* background-color: red; */
   display: flex;
   justify-content: center;
@@ -103,7 +103,7 @@
   height: 62rem;
   overflow-y: hidden;
 }
-.container .pageOne .restPgOne .leftPgOne {
+.maincontainer .pageOne .restPgOne .leftPgOne {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,41 +112,83 @@
   height: 100%;
   overflow-y: hidden;
 }
-.container .pageOne .restPgOne .leftPgOne .leftPgOneUpper {
+.maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneUpper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 20%;
   margin-top: 1rem;
 }
-.container .pageOne .restPgOne .leftPgOne .leftPgOneUpper P {
+.maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneUpper P {
   overflow: hidden;
 }
-.container .pageOne .restPgOne .leftPgOne .leftPgOneUpper p,
-.container .pageOne .restPgOne .leftPgOne .leftPgOneUpper b u {
+.maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneUpper p,
+.maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneUpper b u {
   font-size: 2.5rem;
 }
-.container .pageOne .restPgOne .leftPgOne .leftPgOneUpper b u {
+.maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneUpper b u {
   color: #5bb98b;
 }
-.container .pageOne .restPgOne .leftPgOne .leftPgOneBottom {
+.maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom {
   height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow-y: hidden;
 }
-.container .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom {
-  padding: 1rem;
-}
-.container .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom img {
+.maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom {
+  background-image: url("./image/homePageLeftGrassImage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 2rem;
   height: 43rem;
   width: 30rem;
   box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
   overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.container .pageOne .restPgOne .rightPgOne {
+.maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom .numbersReg {
+  height: 20%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom .numbersReg .percent {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom .numbersReg .percent p {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom .numbersReg .percentText {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom .numbersReg .percentText p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom .numbersReg button {
+  border: none;
+  padding: 2rem;
+  width: 15rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
+  cursor: pointer;
+}
+.maincontainer .pageOne .restPgOne .rightPgOne {
   width: 104rem;
   height: 100%;
   display: flex;
@@ -156,11 +198,11 @@
   margin-top: 1rem;
   overflow-y: hidden;
 }
-.container .pageOne .restPgOne .rightPgOne .largeImg {
+.maincontainer .pageOne .restPgOne .rightPgOne .largeImg {
   height: 85%;
   overflow-y: hidden;
 }
-.container .pageOne .restPgOne .rightPgOne .largeImg img {
+.maincontainer .pageOne .restPgOne .rightPgOne .largeImg img {
   height: 48rem;
   width: 98rem;
   margin: 2rem;
@@ -169,7 +211,7 @@
      object-fit: cover;
   box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
 }
-.container .pageOne .restPgOne .rightPgOne .actionTab {
+.maincontainer .pageOne .restPgOne .rightPgOne .actionTab {
   height: 15%;
   margin-bottom: 1rem;
   width: 100%;
@@ -177,30 +219,68 @@
   justify-content: center;
   align-items: center;
 }
-.container .pageOne .restPgOne .rightPgOne .actionTab .boxforActions {
+.maincontainer .pageOne .restPgOne .rightPgOne .actionTab .boxforActions {
   display: flex;
-  justify-content: center;
   align-items: center;
   background-color: #f8f8f8;
   height: 80%;
   width: 85rem;
   box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
 }
-.container .pageTwo {
+.maincontainer .pageOne .restPgOne .rightPgOne .actionTab .boxforActions .actions {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+}
+.maincontainer .pageOne .restPgOne .rightPgOne .actionTab .boxforActions .actions .svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 30%;
+}
+.maincontainer .pageOne .restPgOne .rightPgOne .actionTab .boxforActions .actions .actionName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 40%;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.maincontainer .pageOne .restPgOne .rightPgOne .actionTab .boxforActions .actions button {
+  height: 60%;
+  width: 100%;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5bb98b;
+  border: none;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 1rem;
+  font-weight: 400;
+  box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
+  cursor: pointer;
+}
+.maincontainer .pageTwo {
   background: #fdfdfd;
 }
-.container .pageTwo .headerPgTwo {
+.maincontainer .pageTwo .headerPgTwo {
   height: 3rem;
   display: flex;
   justify-content: left;
   margin-left: 12rem;
   margin-top: 10rem;
 }
-.container .pageTwo .headerPgTwo p {
+.maincontainer .pageTwo .headerPgTwo p {
   font-size: 2rem;
   color: #5bb98b;
 }
-.container .pageTwo .restPgTwo {
+.maincontainer .pageTwo .restPgTwo {
   display: contents;
   justify-content: center;
   align-items: center;
@@ -208,7 +288,7 @@
   height: 10rem;
   overflow-y: hidden;
 }
-.container .pageTwo .restPgTwo .rightPgTwoUpper {
+.maincontainer .pageTwo .restPgTwo .rightPgTwoUpper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -217,40 +297,40 @@
   width: 100%;
   text-align: left;
 }
-.container .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent {
+.maincontainer .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.container .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent p {
+.maincontainer .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent p {
   font-size: 1.3rem;
 }
-.container .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent .leftTopContentPgTwo {
+.maincontainer .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent .leftTopContentPgTwo {
   width: 30%;
   font-weight: 700;
   overflow: hidden;
 }
-.container .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent .leftTopContentPgTwo p {
+.maincontainer .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent .leftTopContentPgTwo p {
   font-size: 2.5rem;
   color: #000000;
   padding-left: 10rem;
 }
-.container .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent .leftTopContentPgTwo b u {
+.maincontainer .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent .leftTopContentPgTwo b u {
   font-size: 2.5rem;
   color: #5bb98b;
   width: 30rem;
 }
-.container .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent .rightTopContentPgTwo {
+.maincontainer .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent .rightTopContentPgTwo {
   margin-right: 5rem;
   width: 65%;
   overflow-y: hidden;
 }
-.container .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent .rightTopContentPgTwo p {
+.maincontainer .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent .rightTopContentPgTwo p {
   font-size: 1.4rem;
 }
-.container .pageTwo .restPgTwo .pageTwoBottom {
+.maincontainer .pageTwo .restPgTwo .pageTwoBottom {
   background-image: url("./image/aboutUsPage.png");
   display: flex;
   flex-direction: column;
@@ -264,20 +344,20 @@
      object-fit: cover;
   box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
 }
-.container .pageTwo .restPgTwo .pageTwoBottom p {
+.maincontainer .pageTwo .restPgTwo .pageTwoBottom p {
   overflow: hidden;
   margin-top: 3rem;
   height: 5rem;
 }
-.container .pageTwo .restPgTwo .pageTwoBottom b {
+.maincontainer .pageTwo .restPgTwo .pageTwoBottom b {
   font-size: 3.5rem;
   color: #fdfdfd;
 }
-.container .pageTwo .restPgTwo .pageTwoBottom u {
+.maincontainer .pageTwo .restPgTwo .pageTwoBottom u {
   font-size: 3.5rem;
   color: #5bb98b;
 }
-.container .pageTwo .restPgTwo .pageTwoBottom button {
+.maincontainer .pageTwo .restPgTwo .pageTwoBottom button {
   height: 30px;
   width: 150px;
   margin-top: 25rem;

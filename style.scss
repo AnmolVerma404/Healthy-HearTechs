@@ -19,7 +19,7 @@
   font-size: 10px;
   overflow-x: hidden;
 }
-.container {
+.maincontainer {
   height: 100vh;
   width: 100vw;
 
@@ -132,7 +132,7 @@
           // line-height: 2.7rem;
           height: 20%;
           margin-top: 1rem;
-          P{
+          P {
             overflow: hidden;
           }
           p,
@@ -152,14 +152,65 @@
           align-items: center;
           overflow-y: hidden;
           .imgleftPgOneBottom {
-            padding: 1rem;
-            img {
-              border-radius: 2rem;
-              height: 43rem;
-              width: 30rem;
-              box-shadow: 0.5rem 0rem 21px -1rem black,
-                -0.5rem 0rem 10px -1rem black;
-              overflow-y: hidden;
+            //Background Img
+            background-image: url("./image/homePageLeftGrassImage.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 2rem;
+            height: 43rem;
+            width: 30rem;
+            box-shadow: 0.5rem 0rem 21px -1rem black,
+              -0.5rem 0rem 10px -1rem black;
+            overflow-y: hidden;
+
+            //Inner Div
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .numbersReg {
+              // color: #fff;
+              height: 20%;
+              width: 80%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .percent {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                p {
+                  text-align: center;
+                  font-size: 3rem;
+                  font-weight: 600;
+                }
+              }
+
+              .percentText {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                p {
+                  font-size: 1.5rem;
+                  font-weight: 400;
+                }
+              }
+
+              button {
+                border: none;
+                padding: 2rem;
+                width: 15rem;
+                font-size: 1.7rem;
+                font-weight: 500;
+                border-radius: 2rem;
+                box-shadow: 0.5rem 0rem 21px -1rem black,
+                  -0.5rem 0rem 10px -1rem black;
+                cursor: pointer;
+              }
             }
           }
         }
@@ -197,13 +248,56 @@
           align-items: center;
           .boxforActions {
             display: flex;
-            justify-content: center;
             align-items: center;
             background-color: #f8f8f8;
             height: 80%;
             width: 85rem;
             box-shadow: 0.5rem 0rem 21px -1rem black,
               -0.5rem 0rem 10px -1rem black;
+            .actions {
+              display: flex;
+              // justify-content:space-around;
+              align-items: center;
+              height: 100%;
+              width: 20%;
+              
+              .svg{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80%;
+                width: 30%;
+              }
+              
+              .actionName{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80%;
+                width: 40%;
+                font-size: 1.5rem;
+                font-weight: 300;
+              }
+              
+              button{
+                height: 60%;
+                width: 100%;
+                margin-right: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #5bb98b;
+                border: none;
+                border-radius: 2rem;
+                color: #fff;
+                font-size: 1.1rem;
+                padding: 1rem;
+                font-weight: 400;
+                box-shadow: 0.5rem 0rem 21px -1rem black,
+                  -0.5rem 0rem 10px -1rem black;
+                  cursor: pointer;
+              }
+            }
           }
         }
       }
@@ -274,7 +368,7 @@
             width: 65%;
             overflow-y: hidden;
 
-            p{
+            p {
               font-size: 1.4rem;
             }
           }
