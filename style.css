@@ -362,4 +362,12 @@
   width: 150px;
   margin-top: 25rem;
   font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  background-color: #5bb98b;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
