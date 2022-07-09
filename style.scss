@@ -379,45 +379,54 @@
         background-image: url("./image/aboutUsPage.png");
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: hidden;
+        // justify-content: flex-start;
+        // align-items: center;
+        // overflow: hidden;
         height: 40rem;
         width: 148rem;
         margin: 3.5rem 5rem;
         object-fit: cover;
         box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
 
-        p {
-          overflow: hidden;
-          margin-top: 3rem;
-          height: 5rem;
+        .grassHeader{
+          height: 10rem;
+          text-align: center;
+
+          p {
+            overflow: hidden;
+            margin-top: 3rem;
+            height: 5rem;
+          }
+  
+          b {
+            font-size: 3.5rem;
+            color: #fdfdfd;
+          }
+  
+          u {
+            font-size: 3.5rem;
+            color: #5bb98b;
+          }
         }
 
-        b {
-          font-size: 3.5rem;
-          color: #fdfdfd;
-        }
+        .grassButton{
+          text-align: center;
 
-        u {
-          font-size: 3.5rem;
-          color: #5bb98b;
-        }
-
-        button {
-          height: 30px;
-          width: 150px;
-          margin-top: 25rem;
-          font-size: 1.5rem;
-          color: #fff;
-          border: none;
-          background-color: #5bb98b;
-          font-weight: bold;
-          letter-spacing: 0.2rem;
-          border-radius: 0.5rem;
-          box-shadow: 0.5rem 0rem 21px -1rem black,
-                  -0.5rem 0rem 10px -1rem black;
-                  cursor: pointer;
+          button {
+            height: 3rem;
+            width: 15rem;
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            color: #fff;
+            border: none;
+            background-color: #5bb98b;
+            font-weight: bold;
+            letter-spacing: 0.2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0.5rem 0rem 21px -1rem black,
+                    -0.5rem 0rem 10px -1rem black;
+                    cursor: pointer;
+          }
         }
       }
     }

@@ -334,9 +334,6 @@
   background-image: url("./image/aboutUsPage.png");
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  overflow: hidden;
   height: 40rem;
   width: 148rem;
   margin: 3.5rem 5rem;
@@ -344,23 +341,30 @@
      object-fit: cover;
   box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
 }
-.maincontainer .pageTwo .restPgTwo .pageTwoBottom p {
+.maincontainer .pageTwo .restPgTwo .pageTwoBottom .grassHeader {
+  height: 10rem;
+  text-align: center;
+}
+.maincontainer .pageTwo .restPgTwo .pageTwoBottom .grassHeader p {
   overflow: hidden;
   margin-top: 3rem;
   height: 5rem;
 }
-.maincontainer .pageTwo .restPgTwo .pageTwoBottom b {
+.maincontainer .pageTwo .restPgTwo .pageTwoBottom .grassHeader b {
   font-size: 3.5rem;
   color: #fdfdfd;
 }
-.maincontainer .pageTwo .restPgTwo .pageTwoBottom u {
+.maincontainer .pageTwo .restPgTwo .pageTwoBottom .grassHeader u {
   font-size: 3.5rem;
   color: #5bb98b;
 }
-.maincontainer .pageTwo .restPgTwo .pageTwoBottom button {
-  height: 30px;
-  width: 150px;
-  margin-top: 25rem;
+.maincontainer .pageTwo .restPgTwo .pageTwoBottom .grassButton {
+  text-align: center;
+}
+.maincontainer .pageTwo .restPgTwo .pageTwoBottom .grassButton button {
+  height: 3rem;
+  width: 15rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
   color: #fff;
   border: none;
