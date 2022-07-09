@@ -376,6 +376,14 @@
   border-radius: 1rem;
   text-align: center;
 }
+.maincontainer .pageTwo .restPgTwo .pageTwoBottom .grassCards .childCard .card-header {
+  margin: 2rem;
+  font-size: 1.7rem;
+}
+.maincontainer .pageTwo .restPgTwo .pageTwoBottom .grassCards .childCard .card-content {
+  margin: 0 2rem;
+  font-size: 1.2rem;
+}
 .maincontainer .pageTwo .restPgTwo .pageTwoBottom .grassCards .childCard:first-child {
   margin-left: 10rem;
 }
