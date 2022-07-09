@@ -410,6 +410,29 @@
           }
         }
 
+        .grassCards{
+          display: flex;
+
+          .childCard{
+            display: flex;
+            flex-direction: column;
+            flex: 0 0 25rem;
+            border: 2px;
+            background-color: #fff;
+            margin-right: 9rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            height: 20rem;
+            width: 20rem;
+            border-radius: 1rem;
+            text-align: center;
+          }
+
+          .childCard:first-child{
+            margin-left: 10rem;
+          }
+        }
+
         .grassButton{
           text-align: center;
 
