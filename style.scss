@@ -23,6 +23,7 @@
   height: 100vh;
   width: 100vw;
 
+  // PAGE 1
   .pageOne {
     background: linear-gradient(to bottom, #d6fce4, #fdfdfd);
     overflow: hidden;
@@ -260,16 +261,16 @@
               align-items: center;
               height: 100%;
               width: 20%;
-              
-              .svg{
+
+              .svg {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 80%;
                 width: 30%;
               }
-              
-              .actionName{
+
+              .actionName {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -278,8 +279,8 @@
                 font-size: 1.5rem;
                 font-weight: 300;
               }
-              
-              button{
+
+              button {
                 height: 60%;
                 width: 100%;
                 margin-right: 2rem;
@@ -295,7 +296,7 @@
                 font-weight: 400;
                 box-shadow: 0.5rem 0rem 21px -1rem black,
                   -0.5rem 0rem 10px -1rem black;
-                  cursor: pointer;
+                cursor: pointer;
                 overflow: hidden;
               }
             }
@@ -304,6 +305,8 @@
       }
     }
   }
+
+  // PAGE 2
   .pageTwo {
     background: #fdfdfd;
 
@@ -389,7 +392,7 @@
         object-fit: cover;
         box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
 
-        .grassHeader{
+        .grassHeader {
           height: 10rem;
           text-align: center;
 
@@ -398,22 +401,22 @@
             margin-top: 3rem;
             height: 5rem;
           }
-  
+
           b {
             font-size: 3.5rem;
             color: #fdfdfd;
           }
-  
+
           u {
             font-size: 3.5rem;
             color: #5bb98b;
           }
         }
 
-        .grassCards{
+        .grassCards {
           display: flex;
 
-          .childCard{
+          .childCard {
             display: flex;
             flex-direction: column;
             flex: 0 0 25rem;
@@ -427,23 +430,23 @@
             border-radius: 1rem;
             text-align: center;
 
-            .card-header{
+            .card-header {
               margin: 2rem;
               font-size: 1.7rem;
             }
 
-            .card-content{
+            .card-content {
               margin: 0 2rem;
               font-size: 1.2rem;
             }
           }
 
-          .childCard:first-child{
+          .childCard:first-child {
             margin-left: 10rem;
           }
         }
 
-        .grassButton{
+        .grassButton {
           text-align: center;
 
           button {
@@ -458,9 +461,111 @@
             letter-spacing: 0.2rem;
             border-radius: 0.5rem;
             box-shadow: 0.5rem 0rem 21px -1rem black,
-                    -0.5rem 0rem 10px -1rem black;
-                    cursor: pointer;
+              -0.5rem 0rem 10px -1rem black;
+            cursor: pointer;
           }
+        }
+      }
+    }
+  }
+
+  // PAGE 3
+  .pageThree {
+    display: flex;
+    flex-direction: column;
+    background: #fdfdfd;
+
+    .headerPgThree {
+      height: 3rem;
+      margin-left: 12rem;
+      margin-top: 5rem;
+
+      p {
+        font-size: 2rem;
+        color: #5bb98b;
+        font-weight: bold;
+      }
+    }
+
+    .pg3Division {
+      display: flex;
+
+      .restContentPgThree {
+        display: flex;
+        flex-direction: column;
+
+        .contentHead {
+          height: 5rem;
+          margin-top: 2rem;
+          margin-left: 12rem;
+
+          p {
+            font-size: 3rem;
+            color: #000000;
+            font-weight: 600;
+          }
+
+          u {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #5bb98b;
+          }
+        }
+
+        .leftContentPg3 {
+          display: flex;
+          flex-direction: column;
+          margin-left: 12rem;
+          margin-top: 5rem;
+
+          p {
+            color: rgb(103, 103, 103);
+            font-weight: bold;
+            font-size: 2rem;
+          }
+
+          .injuries {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 5rem;
+
+            .injuryTitle1 {
+              margin: 0 5rem;
+
+              p {
+                margin-bottom: 2rem;
+                font-weight: 200;
+              }
+
+              li {
+                margin-top: 2rem;
+                font-size: 1.3rem;
+              }
+            }
+
+            .injuryTitle2 {
+              margin: 0 5rem;
+
+              p {
+                margin-bottom: 2rem;
+                font-weight: 200;
+              }
+
+              li {
+                margin-top: 2rem;
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+      }
+
+      .imagePg3{
+        flex: 10 0 40rem;
+        margin-left: 15rem;
+
+        img{
+          height: 66rem;
         }
       }
     }

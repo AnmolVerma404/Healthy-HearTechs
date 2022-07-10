@@ -403,4 +403,86 @@
   border-radius: 0.5rem;
   box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
   cursor: pointer;
+}
+.maincontainer .pageThree {
+  display: flex;
+  flex-direction: column;
+  background: #fdfdfd;
+}
+.maincontainer .pageThree .headerPgThree {
+  height: 3rem;
+  margin-left: 12rem;
+  margin-top: 5rem;
+}
+.maincontainer .pageThree .headerPgThree p {
+  font-size: 2rem;
+  color: #5bb98b;
+  font-weight: bold;
+}
+.maincontainer .pageThree .pg3Division {
+  display: flex;
+}
+.maincontainer .pageThree .pg3Division .restContentPgThree {
+  display: flex;
+  flex-direction: column;
+}
+.maincontainer .pageThree .pg3Division .restContentPgThree .contentHead {
+  height: 5rem;
+  margin-top: 2rem;
+  margin-left: 12rem;
+}
+.maincontainer .pageThree .pg3Division .restContentPgThree .contentHead p {
+  font-size: 3rem;
+  color: #000000;
+  font-weight: 600;
+}
+.maincontainer .pageThree .pg3Division .restContentPgThree .contentHead u {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #5bb98b;
+}
+.maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12rem;
+  margin-top: 5rem;
+}
+.maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 p {
+  color: rgb(103, 103, 103);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .injuries {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5rem;
+}
+.maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .injuries .injuryTitle1 {
+  margin: 0 5rem;
+}
+.maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .injuries .injuryTitle1 p {
+  margin-bottom: 2rem;
+  font-weight: 200;
+}
+.maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .injuries .injuryTitle1 li {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+.maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .injuries .injuryTitle2 {
+  margin: 0 5rem;
+}
+.maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .injuries .injuryTitle2 p {
+  margin-bottom: 2rem;
+  font-weight: 200;
+}
+.maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .injuries .injuryTitle2 li {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+.maincontainer .pageThree .pg3Division .imagePg3 {
+  flex: 10 0 40rem;
+  margin-left: 15rem;
+}
+.maincontainer .pageThree .pg3Division .imagePg3 img {
+  height: 66rem;
 }/*# sourceMappingURL=style.css.map */
