@@ -482,7 +482,22 @@
 .maincontainer .pageThree .pg3Division .imagePg3 {
   flex: 10 0 40rem;
   margin-left: 15rem;
-}
-.maincontainer .pageThree .pg3Division .imagePg3 img {
+  position: relative;
+  overflow: hidden;
   height: 66rem;
+}
+.maincontainer .pageThree .pg3Division .imagePg3 .bgImagepg3 {
+  height: 56rem;
+  width: 64rem;
+  z-index: 1;
+  position: relative;
+  top: 10rem;
+  left: 20rem;
+}
+.maincontainer .pageThree .pg3Division .imagePg3 .docImgPg3 {
+  position: absolute;
+  top: 0rem;
+  left: -8rem;
+  height: 66rem;
+  z-index: 2;
 }/*# sourceMappingURL=style.css.map */
