@@ -832,4 +832,159 @@
 .maincontainer .pageSix .pgsLower .pgsQustionAnswers .inactive {
   background-color: #fff;
   border: 1rem solid var(--text-btn-main-color);
+}
+.maincontainer .footerMainDiv {
+  height: 50vh;
+  width: 100vw;
+  position: relative;
+}
+.maincontainer .footerMainDiv::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./image/footerBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(40%);
+}
+.maincontainer .footerMainDiv .footerUpper {
+  position: relative;
+  height: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .footerMainDiv .footerUpper .footerLinksLogos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+  padding: 1rem;
+}
+.maincontainer .footerMainDiv .footerUpper .footerLinksLogos .footerTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 25%;
+  width: 100%;
+}
+.maincontainer .footerMainDiv .footerUpper .footerLinksLogos .footerTitle img {
+  height: 90%;
+}
+.maincontainer .footerMainDiv .footerUpper .footerLinksLogos .footerTitle .green {
+  filter: invert(70%) sepia(14%) saturate(1270%) hue-rotate(98deg) brightness(91%) contrast(92%);
+}
+.maincontainer .footerMainDiv .footerUpper .footerLinksLogos .footerTitle p {
+  font-size: 2rem;
+  color: #fff;
+  margin-left: 2rem;
+}
+.maincontainer .footerMainDiv .footerUpper .footerLinksLogos .footerQuote {
+  height: 15%;
+  width: 100%;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-left: 17rem;
+}
+.maincontainer .footerMainDiv .footerUpper .footerLinksLogos .contacts {
+  height: 15%;
+  width: 100%;
+  color: #fff;
+  margin-left: 17rem;
+}
+.maincontainer .footerMainDiv .footerUpper .footerLinksLogos .contacts p {
+  font-size: 1.3rem;
+}
+.maincontainer .footerMainDiv .footerUpper .footerLinksLogos .followUsOn {
+  height: 45%;
+  width: 100%;
+  margin-top: 3rem;
+}
+.maincontainer .footerMainDiv .footerUpper .footerLinksLogos .followUsOn .followHeading {
+  height: 30%;
+  width: 100%;
+  color: #fff;
+  margin-left: 8.7rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.maincontainer .footerMainDiv .footerUpper .footerLinksLogos .followUsOn .followIcons {
+  height: 70%;
+  width: 100%;
+  position: relative;
+}
+.maincontainer .footerMainDiv .footerUpper .footerLinksLogos .followUsOn .followIcons a {
+  position: absolute;
+  height: 70%;
+  left: 15%;
+  cursor: pointer;
+}
+.maincontainer .footerMainDiv .footerUpper .footerLinksLogos .followUsOn .followIcons a img {
+  height: 70%;
+}
+.maincontainer .footerMainDiv .footerUpper .footerLinksLogos .followUsOn .followIcons a .green {
+  filter: invert(70%) sepia(14%) saturate(1270%) hue-rotate(98deg) brightness(91%) contrast(92%);
+}
+.maincontainer .footerMainDiv .footerUpper .footerAboutUs, .maincontainer .footerMainDiv .footerUpper .footerTreatment, .maincontainer .footerMainDiv .footerUpper .footerMore {
+  height: 100%;
+  width: 20%;
+}
+.maincontainer .footerMainDiv .footerUpper .footerAboutUs .heading, .maincontainer .footerMainDiv .footerUpper .footerTreatment .heading, .maincontainer .footerMainDiv .footerUpper .footerMore .heading {
+  height: 30%;
+  width: 100%;
+}
+.maincontainer .footerMainDiv .footerUpper .footerAboutUs .heading p, .maincontainer .footerMainDiv .footerUpper .footerTreatment .heading p, .maincontainer .footerMainDiv .footerUpper .footerMore .heading p {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+  margin-top: 3rem;
+  text-align: center;
+}
+.maincontainer .footerMainDiv .footerUpper .footerAboutUs .content, .maincontainer .footerMainDiv .footerUpper .footerTreatment .content, .maincontainer .footerMainDiv .footerUpper .footerMore .content {
+  height: 70%;
+  width: 100%;
+}
+.maincontainer .footerMainDiv .footerUpper .footerAboutUs .content p, .maincontainer .footerMainDiv .footerUpper .footerTreatment .content p, .maincontainer .footerMainDiv .footerUpper .footerMore .content p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-left: 36%;
+  line-height: 200%;
+}
+.maincontainer .footerMainDiv .footerUpper .footerTreatment .heading p {
+  margin-left: 4%;
+}
+.maincontainer .footerMainDiv .footerUpper .footerMore .heading p {
+  margin-right: 13%;
+}
+.maincontainer .footerMainDiv .footerLower {
+  position: relative;
+  height: 15%;
+  width: 100%;
+  overflow: hidden;
+}
+.maincontainer .footerMainDiv .footerLower p {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 45%;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+.maincontainer .footerMainDiv .footerLower::before {
+  content: " ";
+  position: absolute;
+  height: 13%;
+  border-radius: 2rem;
+  width: 80%;
+  left: 10%;
+  bottom: 70%;
+  background-color: #056703;
 }/*# sourceMappingURL=style.css.map */
