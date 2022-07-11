@@ -10,6 +10,7 @@
   --cyan: #00ffff;
   --midnight-voilet: #1f242d;
   --groung-green: #07252d;
+  --text-btn-main-color: #54bf8b;
 }
 * {
   margin: 0;
@@ -589,14 +590,14 @@
         }
       }
 
-      .imagePg3{
+      .imagePg3 {
         flex: 10 0 40rem;
         margin-left: 15rem;
         position: relative;
         overflow: hidden;
         height: 66rem;
 
-        .bgImagepg3{
+        .bgImagepg3 {
           height: 56rem;
           width: 64rem;
           z-index: 1;
@@ -605,12 +606,325 @@
           left: 20rem;
         }
 
-        .docImgPg3{
+        .docImgPg3 {
           position: absolute;
           top: 0rem;
           left: -8rem;
           height: 66rem;
           z-index: 2;
+        }
+      }
+    }
+  }
+  // PAGE 4
+  .pageFour {
+    height: 200vh;
+    width: 100vw;
+  }
+
+  // PAGE 5
+  .pageFive {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("./image/pageFiveBackground.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: brightness(30%);
+    }
+
+    .upperPgFive {
+      position: relative;
+      height: 70%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .pgfULeft {
+        height: 100%;
+        width: 50%;
+        overflow: hidden;
+
+        .pfgULeftBox {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-left: 3rem;
+          margin-top: 3rem;
+          height: 100%;
+          width: 90%;
+
+          .pgfTitle {
+            height: 20%;
+            width: 100%;
+            p {
+              color: var(--text-btn-main-color);
+              font-size: 3.3rem;
+              font-weight: bold;
+            }
+          }
+
+          .pgfAbtUs {
+            height: 20%;
+            width: 100%;
+            p {
+              color: #fff;
+              font-size: 2.2rem;
+              font-weight: bold;
+
+              span {
+                font-size: 2.2rem;
+                color: var(--text-btn-main-color);
+                text-decoration: underline;
+              }
+            }
+          }
+
+          .pgfReview {
+            height: 60%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .customerReview {
+              height: 50%;
+              width: 100%;
+              p {
+                font-size: 2rem;
+                color: #fff;
+              }
+            }
+
+            .customerName {
+              height: 20%;
+              width: 100%;
+              p {
+                font-size: 2rem;
+                color: #fff;
+              }
+            }
+
+            .nextCustomer {
+              height: 30%;
+              width: 100%;
+              button {
+                background: transparent;
+                border: transparent;
+                cursor: pointer;
+                img {
+                  height: 4rem;
+                }
+                .pg5active {
+                  border-radius: 2rem;
+                  background-color: var(--text-btn-main-color);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .pgfURight {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .pgfRightDiv {
+          height: 90%;
+          width: 80%;
+          position: relative;
+          .pgfRightImgOne {
+            position: absolute;
+            margin: 8rem;
+            margin-top: 10rem;
+            height: 60%;
+            width: 60%;
+            background-image: url("./image/pageFiveRad.png");
+            box-shadow: 0px 4px 66px 48px rgba(0, 0, 0, 0.25);
+            border-radius: 0rem 12rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+          .pgfRightImgTwo {
+            position: absolute;
+            height: 80%;
+            width: 100%;
+            top: 10px;
+            right: 127px;
+            background-image: url("./image/pageFivePatient.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+
+    .lowerPgFive {
+      position: relative;
+
+      height: 30%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .pgfLDiv {
+        background: hsla(151deg, 100%, 8%, 0.72);
+        height: 80%;
+        width: 80%;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        .pg5Tag {
+          margin-top: 1rem;
+          height: 30%;
+          b {
+            p {
+              color: #fff;
+              font-size: 2rem;
+            }
+          }
+        }
+        .down4Div {
+          height: 20%;
+          p {
+            color: #fff;
+            font-size: 1.5rem;
+          }
+        }
+        .pg5BtnDiv {
+          height: 30%;
+          button {
+            border: none;
+            padding: 1rem;
+            border-radius: 2rem 0.1rem;
+            background-color: #54bf8b;
+            p {
+              text-align: center;
+              color: #000;
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // PAGE 6
+  .pageSix {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("./image/pgsixBackground.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: brightness(30%);
+    }
+
+    .pgsUpper {
+      position: relative;
+      height: 30%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      .pgstitle {
+        height: 100%;
+        width: 80%;
+        margin-top: 5rem;
+        p {
+          color: #fff;
+          font-size: 7rem;
+          text-align: center;
+          span {
+            color: var(--text-btn-main-color);
+            font-size: 7rem;
+          }
+        }
+      }
+    }
+    .pgsLower {
+      position: relative;
+      height: 70%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .pgsQustionAnswers {
+        height: 90%;
+        width: 90%;
+        .question {
+          position: relative;
+          height: 20%;
+          width: 100%;
+          background-color: #002b00;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          border-radius: 2rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .pgsQLeft {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            font-size: 2rem;
+            color: #3f9169;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            top: 0%;
+            left: 3%;
+          }
+          .pgsQRight {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            top: 0%;
+            left: 95%;
+            img{
+            }
+          }
+        }
+        .inactive {
+          background-color: #fff;
+          border: 1rem solid var(--text-btn-main-color);
         }
       }
     }

@@ -10,6 +10,7 @@
   --cyan: #00ffff;
   --midnight-voilet: #1f242d;
   --groung-green: #07252d;
+  --text-btn-main-color: #54bf8b;
 }
 
 * {
@@ -524,4 +525,287 @@
   left: -8rem;
   height: 66rem;
   z-index: 2;
+}
+.maincontainer .pageFour {
+  height: 200vh;
+  width: 100vw;
+}
+.maincontainer .pageFive {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.maincontainer .pageFive::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./image/pageFiveBackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(30%);
+}
+.maincontainer .pageFive .upperPgFive {
+  position: relative;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  height: 100%;
+  width: 90%;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox .pgfTitle {
+  height: 20%;
+  width: 100%;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox .pgfTitle p {
+  color: var(--text-btn-main-color);
+  font-size: 3.3rem;
+  font-weight: bold;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox .pgfAbtUs {
+  height: 20%;
+  width: 100%;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox .pgfAbtUs p {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox .pgfAbtUs p span {
+  font-size: 2.2rem;
+  color: var(--text-btn-main-color);
+  text-decoration: underline;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox .pgfReview {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox .pgfReview .customerReview {
+  height: 50%;
+  width: 100%;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox .pgfReview .customerReview p {
+  font-size: 2rem;
+  color: #fff;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox .pgfReview .customerName {
+  height: 20%;
+  width: 100%;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox .pgfReview .customerName p {
+  font-size: 2rem;
+  color: #fff;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox .pgfReview .nextCustomer {
+  height: 30%;
+  width: 100%;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox .pgfReview .nextCustomer button {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox .pgfReview .nextCustomer button img {
+  height: 4rem;
+}
+.maincontainer .pageFive .upperPgFive .pgfULeft .pfgULeftBox .pgfReview .nextCustomer button .pg5active {
+  border-radius: 2rem;
+  background-color: var(--text-btn-main-color);
+}
+.maincontainer .pageFive .upperPgFive .pgfURight {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .pageFive .upperPgFive .pgfURight .pgfRightDiv {
+  height: 90%;
+  width: 80%;
+  position: relative;
+}
+.maincontainer .pageFive .upperPgFive .pgfURight .pgfRightDiv .pgfRightImgOne {
+  position: absolute;
+  margin: 8rem;
+  margin-top: 10rem;
+  height: 60%;
+  width: 60%;
+  background-image: url("./image/pageFiveRad.png");
+  box-shadow: 0px 4px 66px 48px rgba(0, 0, 0, 0.25);
+  border-radius: 0rem 12rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.maincontainer .pageFive .upperPgFive .pgfURight .pgfRightDiv .pgfRightImgTwo {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  top: 10px;
+  right: 127px;
+  background-image: url("./image/pageFivePatient.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.maincontainer .pageFive .lowerPgFive {
+  position: relative;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .pageFive .lowerPgFive .pgfLDiv {
+  background: hsla(151deg, 100%, 8%, 0.72);
+  height: 80%;
+  width: 80%;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+.maincontainer .pageFive .lowerPgFive .pgfLDiv .pg5Tag {
+  margin-top: 1rem;
+  height: 30%;
+}
+.maincontainer .pageFive .lowerPgFive .pgfLDiv .pg5Tag b p {
+  color: #fff;
+  font-size: 2rem;
+}
+.maincontainer .pageFive .lowerPgFive .pgfLDiv .down4Div {
+  height: 20%;
+}
+.maincontainer .pageFive .lowerPgFive .pgfLDiv .down4Div p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.maincontainer .pageFive .lowerPgFive .pgfLDiv .pg5BtnDiv {
+  height: 30%;
+}
+.maincontainer .pageFive .lowerPgFive .pgfLDiv .pg5BtnDiv button {
+  border: none;
+  padding: 1rem;
+  border-radius: 2rem 0.1rem;
+  background-color: #54bf8b;
+}
+.maincontainer .pageFive .lowerPgFive .pgfLDiv .pg5BtnDiv button p {
+  text-align: center;
+  color: #000;
+  font-size: 1.5rem;
+}
+.maincontainer .pageSix {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.maincontainer .pageSix::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./image/pgsixBackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(30%);
+}
+.maincontainer .pageSix .pgsUpper {
+  position: relative;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.maincontainer .pageSix .pgsUpper .pgstitle {
+  height: 100%;
+  width: 80%;
+  margin-top: 5rem;
+}
+.maincontainer .pageSix .pgsUpper .pgstitle p {
+  color: #fff;
+  font-size: 7rem;
+  text-align: center;
+}
+.maincontainer .pageSix .pgsUpper .pgstitle p span {
+  color: var(--text-btn-main-color);
+  font-size: 7rem;
+}
+.maincontainer .pageSix .pgsLower {
+  position: relative;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .pageSix .pgsLower .pgsQustionAnswers {
+  height: 90%;
+  width: 90%;
+}
+.maincontainer .pageSix .pgsLower .pgsQustionAnswers .question {
+  position: relative;
+  height: 20%;
+  width: 100%;
+  background-color: #002b00;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.maincontainer .pageSix .pgsLower .pgsQustionAnswers .question .pgsQLeft {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 2rem;
+  color: #3f9169;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0%;
+  left: 3%;
+}
+.maincontainer .pageSix .pgsLower .pgsQustionAnswers .question .pgsQRight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0%;
+  left: 95%;
+}
+.maincontainer .pageSix .pgsLower .pgsQustionAnswers .inactive {
+  background-color: #fff;
+  border: 1rem solid var(--text-btn-main-color);
 }/*# sourceMappingURL=style.css.map */
