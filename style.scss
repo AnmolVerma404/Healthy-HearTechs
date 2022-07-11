@@ -497,18 +497,18 @@
 
         .contentHead {
           height: 6rem;
-          margin-top: 2rem;
+          margin-top: 1.5rem;
           margin-left: 12rem;
 
           p {
             font-size: 3.5rem;
             color: #000000;
-            font-weight: 600;
+            font-weight: 900;
           }
 
           u {
             font-size: 3.5rem;
-            font-weight: bold;
+            font-weight: 900;
             color: #5bb98b;
           }
         }
@@ -517,7 +517,7 @@
           display: flex;
           flex-direction: column;
           margin-left: 12rem;
-          margin-top: 5rem;
+          margin-top: 2rem;
 
           p {
             color: rgb(103, 103, 103);
@@ -526,16 +526,15 @@
           }
 
           .searchConditionPg3{
-            margin: 5rem 0rem;
-            margin-top: 10rem;
-            
+            margin-bottom: 2rem;
+            margin-top: 5rem;
 
             input{
               margin-top: 2rem;
               width: 40rem;
               height: 5rem;
               font-size: 1.5rem;
-              padding: 2rem;
+              padding: 1rem;
               border-radius: 1rem;
               border: 0.1rem solid rgb(117, 117, 117);
               box-shadow: 0.5rem 0rem 21px -1rem black,
@@ -557,18 +556,18 @@
           .injuries {
             display: flex;
             justify-content: flex-start;
-            margin-top: 5rem;
+            margin-top: 3rem;
 
             .injuryTitle1 {
               margin: 0 5rem;
 
               p {
-                margin-bottom: 2rem;
+                margin-bottom: 1.5rem;
                 font-weight: 200;
               }
 
               li {
-                margin-top: 2rem;
+                margin-top: 1.5rem;
                 font-size: 1.3rem;
               }
             }
@@ -577,17 +576,19 @@
               margin: 0 5rem;
 
               p {
-                margin-bottom: 2rem;
+                margin-bottom: 1.5rem;
                 font-weight: 200;
               }
 
               li {
-                margin-top: 2rem;
+                margin-top: 1.5rem;
                 font-size: 1.3rem;
               }
             }
           }
         }
+
+        
       }
 
       .imagePg3 {
@@ -595,25 +596,34 @@
         margin-left: 15rem;
         position: relative;
         overflow: hidden;
-        height: 66rem;
+        height: 56rem;
 
         .bgImagepg3 {
-          height: 56rem;
-          width: 64rem;
+          height: 40rem;
+          width: 45rem;
           z-index: 1;
           position: relative;
           top: 10rem;
-          left: 20rem;
+          left: 32rem;
         }
 
         .docImgPg3 {
           position: absolute;
           top: 0rem;
-          left: -8rem;
-          height: 66rem;
+          left: 8rem;
+          height: 50rem;
           z-index: 2;
         }
       }
+    }
+
+    .HowItWorksFooter{
+      display: flex;
+      flex-direction: column;
+      background-image: url("./image/Page3FooterImage.png");
+      margin-top: 0rem;
+      height: 16rem;
+      width: 160rem;
     }
   }
   // PAGE 4
