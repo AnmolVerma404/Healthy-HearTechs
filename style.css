@@ -475,7 +475,7 @@
   font-size: 1.3rem;
   border-radius: 1rem;
   border: none;
-  background-color: #02492B;
+  background-color: #02492b;
 }
 .maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .injuries {
   display: flex;
@@ -528,12 +528,27 @@
 }
 .maincontainer .pageThree .HowItWorksFooter {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
   background-image: url("./image/Page3FooterImage.png");
   height: 20rem;
   width: 160rem;
   margin-top: -4rem;
+}
+.maincontainer .pageThree .HowItWorksFooter p {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: 12rem;
+  margin-top: 3rem;
+}
+.maincontainer .pageThree .HowItWorksFooter .Pg3FootRest {
+  display: flex;
+}
+.maincontainer .pageThree .HowItWorksFooter .Pg3FootRest p {
+  color: #5bb98b;
+  font-size: 2.5rem;
+  margin-left: 12rem;
+  margin-top: 3rem;
+  font-weight: 900;
 }
 .maincontainer .pageFour {
   height: 200vh;

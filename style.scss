@@ -525,11 +525,11 @@
             font-size: 2rem;
           }
 
-          .searchConditionPg3{
+          .searchConditionPg3 {
             margin-bottom: 5rem;
             margin-top: 5rem;
 
-            input{
+            input {
               margin-top: 2rem;
               width: 40rem;
               height: 5rem;
@@ -538,10 +538,10 @@
               border-radius: 1rem;
               border: 0.1rem solid rgb(117, 117, 117);
               box-shadow: 0.5rem 0rem 21px -1rem black,
-              -0.5rem 0rem 10px -1rem black;
+                -0.5rem 0rem 10px -1rem black;
             }
 
-            .searchButtonPg3{
+            .searchButtonPg3 {
               width: 10rem;
               height: 4rem;
               margin-left: 5rem;
@@ -549,7 +549,7 @@
               font-size: 1.3rem;
               border-radius: 1rem;
               border: none;
-              background-color: #02492B;
+              background-color: #02492b;
             }
           }
 
@@ -587,8 +587,6 @@
             }
           }
         }
-
-        
       }
 
       .imagePg3 {
@@ -617,14 +615,32 @@
       }
     }
 
-    .HowItWorksFooter{
+    .HowItWorksFooter {
       display: flex;
-      justify-content: flex-start;
       flex-direction: column;
       background-image: url("./image/Page3FooterImage.png");
       height: 20rem;
       width: 160rem;
       margin-top: -4rem;
+
+      p {
+        color: #fff;
+        font-size: 2rem;
+        margin-left: 12rem;
+        margin-top: 3rem;
+      }
+
+      .Pg3FootRest {
+        display: flex;
+
+        p {
+          color: #5bb98b;
+          font-size: 2.5rem;
+          margin-left: 12rem;
+          margin-top: 3rem;
+          font-weight: 900;
+        }
+      }
     }
   }
   // PAGE 4
@@ -929,7 +945,7 @@
             align-items: center;
             top: 0%;
             left: 95%;
-            img{
+            img {
             }
           }
         }
