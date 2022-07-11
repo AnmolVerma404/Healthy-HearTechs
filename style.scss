@@ -495,18 +495,18 @@
         flex-direction: column;
 
         .contentHead {
-          height: 5rem;
+          height: 6rem;
           margin-top: 2rem;
           margin-left: 12rem;
 
           p {
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: #000000;
             font-weight: 600;
           }
 
           u {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: bold;
             color: #5bb98b;
           }
@@ -522,6 +522,35 @@
             color: rgb(103, 103, 103);
             font-weight: bold;
             font-size: 2rem;
+          }
+
+          .searchConditionPg3{
+            margin: 5rem 0rem;
+            margin-top: 10rem;
+            
+
+            input{
+              margin-top: 2rem;
+              width: 40rem;
+              height: 5rem;
+              font-size: 1.5rem;
+              padding: 2rem;
+              border-radius: 1rem;
+              border: 0.1rem solid rgb(117, 117, 117);
+              box-shadow: 0.5rem 0rem 21px -1rem black,
+              -0.5rem 0rem 10px -1rem black;
+            }
+
+            .searchButtonPg3{
+              width: 10rem;
+              height: 4rem;
+              margin-left: 5rem;
+              color: #fff;
+              font-size: 1.3rem;
+              border-radius: 1rem;
+              border: none;
+              background-color: #02492B;
+            }
           }
 
           .injuries {
