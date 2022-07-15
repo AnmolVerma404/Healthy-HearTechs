@@ -617,7 +617,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #051F09;
+  background-color: #051f09;
 }
 .maincontainer .pageFour .headerPgFour {
   font-size: 2.5rem;
@@ -642,9 +642,41 @@
   width: 25rem;
   background-color: #54bf8b;
 }
-.maincontainer .pageFour .pg4Img {
-  width: 49rem;
-  margin-top: -5rem;
+.maincontainer .pageFour .cardsPg4 {
+  display: flex;
+  width: 150rem;
+}
+.maincontainer .pageFour .cardsPg4 .cardsRow {
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+}
+.maincontainer .pageFour .cardsPg4 .cardsRow .card {
+  width: 35rem;
+  height: 22rem;
+  background-color: #fff;
+  border: 2px;
+  margin-bottom: 5rem;
+  margin-left: 6rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+.maincontainer .pageFour .cardsPg4 .cardsRow .card h3 {
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  text-align: left;
+  margin: 2rem;
+}
+.maincontainer .pageFour .cardsPg4 .cardsRow .card p {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0 2rem;
+}
+.maincontainer .pageFour .cardsPg4 .pg4Img {
+  width: 75rem;
+  height: 62rem;
+  margin-top: -7rem;
 }
 .maincontainer .pageFive {
   position: relative;
