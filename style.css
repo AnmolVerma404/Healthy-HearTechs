@@ -614,8 +614,37 @@
   font-size: 1.6rem;
 }
 .maincontainer .pageFour {
-  height: 200vh;
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #051F09;
+}
+.maincontainer .pageFour .headerPgFour {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+  color: #54bf8b;
+  margin: 3rem;
+}
+.maincontainer .pageFour .headerPgFour p {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.maincontainer .pageFour .headerPgFour u {
+  color: #54bf8b;
+  font-size: 2.5rem;
+}
+.maincontainer .pageFour .pg4ReadMore {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  height: 4.5rem;
+  width: 25rem;
+  background-color: #54bf8b;
+}
+.maincontainer .pageFour .pg4Img {
+  width: 49rem;
+  margin-top: -5rem;
 }
 .maincontainer .pageFive {
   position: relative;
