@@ -27,7 +27,7 @@
   width: 100vw;
 }
 .maincontainer .pageOne {
-  background: linear-gradient(to bottom, #d6fce4, #fdfdfd);
+  background: linear-gradient(to bottom, #024524, #fdfdfd);
   overflow: hidden;
 }
 .maincontainer .pageOne .headerPgOne {
@@ -78,9 +78,6 @@
   margin: 2rem;
 }
 .maincontainer .pageOne .headerPgOne .rightHeader .navBar ul li button {
-  cursor: pointer;
-  font-size: 1.5rem;
-  font-weight: 500;
   background-color: transparent;
   border: none;
   padding: 1rem;
@@ -88,10 +85,18 @@
 .maincontainer .pageOne .headerPgOne .rightHeader .navBar ul li a {
   cursor: pointer;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
   background-color: transparent;
+  text-decoration: none;
   border: none;
   padding: 1rem;
+  color: #fff;
+}
+.maincontainer .pageOne .headerPgOne .rightHeader .navBar ul li a:visited {
+  color: #fff;
+}
+.maincontainer .pageOne .headerPgOne .rightHeader .navBar ul li a:hover {
+  color: #000;
 }
 .maincontainer .pageOne .headerPgOne .rightHeader .buttonMakeApp {
   margin-right: 2rem;
@@ -101,8 +106,12 @@
   padding: 1.5rem;
   border-radius: 1.5rem;
   font-size: 1.5rem;
+  font-weight: 600;
   background-color: #5bb98b;
   border: none;
+}
+.maincontainer .pageOne .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton:hover {
+  background-color: #17d978;
 }
 .maincontainer .pageOne .restPgOne {
   /* background-color: red; */
