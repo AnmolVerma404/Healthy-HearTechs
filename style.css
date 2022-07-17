@@ -85,6 +85,14 @@
   border: none;
   padding: 1rem;
 }
+.maincontainer .pageOne .headerPgOne .rightHeader .navBar ul li a {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+}
 .maincontainer .pageOne .headerPgOne .rightHeader .buttonMakeApp {
   margin-right: 2rem;
 }
@@ -294,13 +302,16 @@
 }
 .maincontainer .pageTwo {
   background: #fdfdfd;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 .maincontainer .pageTwo .headerPgTwo {
   height: 3rem;
   display: flex;
   justify-content: left;
-  margin-left: 12rem;
-  margin-top: 10rem;
+  margin-left: 13rem;
+  margin-top: 3rem;
 }
 .maincontainer .pageTwo .headerPgTwo p {
   font-size: 2rem;
@@ -334,7 +345,7 @@
   font-size: 1.3rem;
 }
 .maincontainer .pageTwo .restPgTwo .rightPgTwoUpper .rightPgTwoUpperContent .leftTopContentPgTwo {
-  width: 30%;
+  width: 28%;
   font-weight: 700;
   overflow: hidden;
 }
@@ -430,6 +441,9 @@
   cursor: pointer;
 }
 .maincontainer .pageThree {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   background: #fdfdfd;
@@ -437,7 +451,6 @@
 .maincontainer .pageThree .headerPgThree {
   height: 3rem;
   margin-left: 12rem;
-  margin-top: 5rem;
 }
 .maincontainer .pageThree .headerPgThree p {
   font-size: 2rem;
@@ -453,7 +466,7 @@
 }
 .maincontainer .pageThree .pg3Division .restContentPgThree .contentHead {
   height: 6rem;
-  margin-top: 1.5rem;
+  margin-top: 1.8rem;
   margin-left: 12rem;
 }
 .maincontainer .pageThree .pg3Division .restContentPgThree .contentHead p {
@@ -475,7 +488,7 @@
 .maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 p {
   color: rgb(103, 103, 103);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .searchConditionPg3 {
   margin-bottom: 5rem;
