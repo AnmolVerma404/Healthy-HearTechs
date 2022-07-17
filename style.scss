@@ -136,7 +136,6 @@
     }
 
     .restPgOne {
-      /* background-color: red; */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -155,19 +154,19 @@
         .leftPgOneUpper {
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          // line-height: 2.7rem;
-          height: 20%;
-          margin-top: 1rem;
+          line-height: 2rem;
+          height: 25%;
+          margin-top: 1.5rem;
           P {
             overflow: hidden;
+            font-weight: 600;
           }
           p,
           b u {
             font-size: 2.5rem;
           }
           b u {
-            color: #5bb98b;
+            color: #17d978;
           }
         }
 
@@ -232,8 +231,9 @@
 
               .percentText {
                 overflow: hidden;
-                width: 100%;
+                width: 80%;
                 height: 100%;
+                text-align: center;
                 p {
                   color: #fff;
                   font-size: 1.5rem;
@@ -257,7 +257,7 @@
               top: 10%;
             }
             .b {
-              top: 30%;
+              top: 38%;
             }
             .c {
               top: 50%;

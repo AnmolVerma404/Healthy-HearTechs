@@ -114,7 +114,6 @@
   background-color: #17d978;
 }
 .maincontainer .pageOne .restPgOne {
-  /* background-color: red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,19 +132,20 @@
 .maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneUpper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 20%;
-  margin-top: 1rem;
+  line-height: 2rem;
+  height: 25%;
+  margin-top: 1.5rem;
 }
 .maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneUpper P {
   overflow: hidden;
+  font-weight: 600;
 }
 .maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneUpper p,
 .maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneUpper b u {
   font-size: 2.5rem;
 }
 .maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneUpper b u {
-  color: #5bb98b;
+  color: #17d978;
 }
 .maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom {
   height: 80%;
@@ -200,8 +200,9 @@
 }
 .maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom .numbersReg .percentText {
   overflow: hidden;
-  width: 100%;
+  width: 80%;
   height: 100%;
+  text-align: center;
 }
 .maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom .numbersReg .percentText p {
   color: #fff;
@@ -222,7 +223,7 @@
   top: 10%;
 }
 .maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom .b {
-  top: 30%;
+  top: 38%;
 }
 .maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom .c {
   top: 50%;
