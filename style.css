@@ -25,10 +25,15 @@
 .maincontainer {
   height: 100vh;
   width: 100vw;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 .maincontainer .pageOne {
   background: linear-gradient(to bottom, #024524, #fdfdfd);
   overflow: hidden;
+  height: 100vh;
+  scroll-snap-align: start;
 }
 .maincontainer .pageOne .headerPgOne {
   height: 10rem;
@@ -315,6 +320,7 @@
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  scroll-snap-align: start;
 }
 .maincontainer .pageTwo .headerPgTwo {
   height: 3rem;
@@ -457,6 +463,7 @@
   display: flex;
   flex-direction: column;
   background: #fdfdfd;
+  scroll-snap-align: start;
 }
 .maincontainer .pageThree .headerPgThree {
   height: 3rem;
@@ -478,6 +485,7 @@
   height: 6rem;
   margin-top: 1.8rem;
   margin-left: 12rem;
+  overflow: hidden;
 }
 .maincontainer .pageThree .pg3Division .restContentPgThree .contentHead p {
   font-size: 3.5rem;
@@ -496,6 +504,7 @@
   margin-top: 2rem;
 }
 .maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 p {
+  overflow: hidden;
   color: rgb(103, 103, 103);
   font-weight: bold;
   font-size: 1.8rem;
@@ -503,6 +512,7 @@
 .maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .searchConditionPg3 {
   margin-bottom: 5rem;
   margin-top: 5rem;
+  overflow: hidden;
 }
 .maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .searchConditionPg3 input {
   margin-top: 2rem;
@@ -530,6 +540,7 @@
   margin-top: 3rem;
 }
 .maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .injuries .injuryTitle1 {
+  overflow: hidden;
   margin: 0 5rem;
 }
 .maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .injuries .injuryTitle1 p {
@@ -542,6 +553,7 @@
 }
 .maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .injuries .injuryTitle2 {
   margin: 0 5rem;
+  overflow: hidden;
 }
 .maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .injuries .injuryTitle2 p {
   margin-bottom: 1.5rem;
@@ -641,6 +653,8 @@
   flex-direction: column;
   align-items: center;
   background-color: #051f09;
+  scroll-snap-align: start;
+  height: 100vh;
 }
 .maincontainer .pageFour .headerPgFour {
   font-size: 2.5rem;
@@ -648,6 +662,7 @@
   text-align: center;
   color: #54bf8b;
   margin: 3rem;
+  overflow: hidden;
 }
 .maincontainer .pageFour .headerPgFour p {
   color: #fff;
@@ -663,11 +678,13 @@
   color: #fff;
   height: 4.5rem;
   width: 25rem;
+  overflow: hidden;
   background-color: #54bf8b;
 }
 .maincontainer .pageFour .cardsPg4 {
   display: flex;
   width: 150rem;
+  overflow: hidden;
 }
 .maincontainer .pageFour .cardsPg4 .cardsRow {
   width: 60rem;
@@ -705,6 +722,7 @@
   position: relative;
   height: 100vh;
   width: 100vw;
+  scroll-snap-align: start;
 }
 .maincontainer .pageFive::before {
   content: "";
@@ -893,6 +911,7 @@
   height: 100vh;
   width: 100vw;
   position: relative;
+  scroll-snap-align: start;
 }
 .maincontainer .pageSix::before {
   content: " ";
@@ -984,6 +1003,7 @@
   height: 50vh;
   width: 100vw;
   position: relative;
+  scroll-snap-align: start;
 }
 .maincontainer .footerMainDiv::before {
   content: " ";
