@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/appointment.css" />
     <title>Appointment</title>
-</head>
-<body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident architecto fuga, itaque delectus libero officiis porro veniam dolorem est. Vero, nobis asperiores itaque quisquam doloribus id laboriosam laudantium voluptate commodi.</h1>
-</body>
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div class="headerPgOne">
+        <div class="leftHeader">
+          <div class="logoSvgDiv">
+            <img src="../../svg/webLogo.svg" class="svgLogo" />
+          </div>
+          <div class="textlogoDiv">
+            <div class="heartPulseImgDiv">
+              <img src="../../image/heart pulse.png" class="heartPulseImg" />
+            </div>
+            <div class="websiteNameDiv">
+              <h3 class="websiteName">Healthy HearTechs</h3>
+            </div>
+          </div>
+        </div>
+        <div class="rightHeader">
+          <div class="navBar">
+            <ul>
+              <li>
+                <button><a href="#pageOne">Home</a></button>
+              </li>
+              <li>
+                <button><a href="#pageTwo">About Us</a></button>
+              </li>
+              <li>
+                <button><a href="#pageThree">Service</a></button>
+              </li>
+              <li>
+                <button><a href="#pageFour">Blog</a></button>
+              </li>
+              <li>
+                <button><a href="#pageFive">Testmonial</a></button>
+              </li>
+              <li>
+                <button><a href="#pageSix">FAQ</a></button>
+              </li>
+              <li>
+                <button><a href="#footerMainDiv">Contact</a></button>
+              </li>
+            </ul>
+          </div>
+          <div class="buttonMakeApp">
+            <button class="makeAppointmentButton">
+              <a class="appointmentAnchor" href="./src/views/appointment.html"
+                >Make an Appointment</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="restPgOne">
+        <div class="leftPgOne">
+          <div class="googleMap" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.3366032366356!2d77.393282407982!3d23.256448077428345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c681c61386b19%3A0xa706c43437308978!2sRaja%20Bhoj%20Statue!5e0!3m2!1sen!2sin!4v1658672096952!5m2!1sen!2sin" width="600" height="450" srtyle="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="rightPgOne">
+          <div class="form">
+            <div class="formHeading"><h1>Book your Doctor Today!</h1></div>
+            <div class="formContent">
+              <form></form>
+            </div>
+            <div class="formSubmit">
+              <!-- <button type="submit"></button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../public/Js/appointment.js"></script>
+  </body>
 </html>
