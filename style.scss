@@ -116,7 +116,6 @@
               a:hover {
                 color: #000;
               }
-
             }
           }
         }
@@ -130,9 +129,14 @@
             font-weight: 600;
             background-color: #5bb98b;
             border: none;
+            .appointmentAnchor {
+              color: white;
+              background-color: transparent;
+              text-decoration: none;
+            }
           }
 
-          .makeAppointmentButton:hover{
+          .makeAppointmentButton:hover {
             background-color: #17d978;
           }
         }
@@ -354,6 +358,12 @@
                   -0.5rem 0rem 10px -1rem black;
                 cursor: pointer;
                 overflow: hidden;
+
+                .appointmentAnchor {
+                  color: white;
+                  background-color: transparent;
+                  text-decoration: none;
+                }
               }
             }
           }
@@ -545,7 +555,6 @@
       // margin-top: 2rem;
 
       p {
-
         font-size: 2rem;
         color: #5bb98b;
         font-weight: bold;
@@ -583,7 +592,7 @@
           flex-direction: column;
           margin-left: 12rem;
           margin-top: 2rem;
-          
+
           p {
             overflow: hidden;
             color: rgb(103, 103, 103);
@@ -1045,6 +1054,12 @@
               text-align: center;
               color: #000;
               font-size: 1.5rem;
+
+              .appointmentAnchor {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+              }
             }
           }
         }

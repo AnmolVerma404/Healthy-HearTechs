@@ -115,6 +115,11 @@
   background-color: #5bb98b;
   border: none;
 }
+.maincontainer .pageOne .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton .appointmentAnchor {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
 .maincontainer .pageOne .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton:hover {
   background-color: #17d978;
 }
@@ -314,6 +319,11 @@
   box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
   cursor: pointer;
   overflow: hidden;
+}
+.maincontainer .pageOne .restPgOne .rightPgOne .actionTab .boxforActions .actions button .appointmentAnchor {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
 .maincontainer .pageTwo {
   background: #fdfdfd;
@@ -906,6 +916,11 @@
   text-align: center;
   color: #000;
   font-size: 1.5rem;
+}
+.maincontainer .pageFive .lowerPgFive .pgfLDiv .pg5BtnDiv button p .appointmentAnchor {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
 .maincontainer .pageSix {
   height: 100vh;
