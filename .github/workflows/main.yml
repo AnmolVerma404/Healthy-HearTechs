@@ -1,0 +1,20 @@
+name: 'Main Branch CI/CD'
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test-code-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing...🧪"
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: npm i
+      - run: echo "Test Completed...🤯"
