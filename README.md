@@ -31,7 +31,16 @@ Welcome to our health website, where you can find information and solutions for 
 - Backend: Node.js
 - Database: MongoDB
 - APIs: Google Maps API
+<hr>
 
+## Architecture
+
+![User](./img/user.png)
+![Diseases](./img/diseases.png)
+![Allopathic Medicine](./img/allopathic%20medicine.png)
+![Ayurvedic Medicine](./img/ayurvedic%20medicine.png)
+
+<hr>
 ## Installation and Setup
 
 Clone the repository:
