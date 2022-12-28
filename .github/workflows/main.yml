@@ -16,5 +16,11 @@ jobs:
       - run: echo "Testing...🧪"
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - run: npm i
+      - name: Client Check
+        run: echo "Client Success...🎉"
+      - name: Server Check
+        run: |
+          cd server
+          npm i
+          echo "Server Success...🎉"
       - run: echo "Test Completed...🤯"
