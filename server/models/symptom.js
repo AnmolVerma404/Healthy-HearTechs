@@ -7,7 +7,7 @@ const symptomSchema = Schema(
 			required: true,
 			minlength: 1,
 			trim: true,
-		}
+		},
 	},
 	{
 		timestamps: true,
@@ -20,4 +20,4 @@ const symptomSchema = Schema(
 	}
 );
 
-export const Symptom = model("symptom",symptomSchema);
+export const Symptom = model('symptom', symptomSchema);
