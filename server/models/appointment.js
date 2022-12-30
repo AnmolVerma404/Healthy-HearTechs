@@ -10,15 +10,15 @@ const appointmentSchema = Schema(
 		},
 		date: {
 			type: Date,
-            default: Date.now(),
+			default: Date.now(),
 			required: true,
 		},
 		location: {
 			type: String,
 			required: true,
-            minlength:1,
-            trim:true
-		}
+			minlength: 1,
+			trim: true,
+		},
 	},
 	{
 		timestamps: true,
@@ -31,4 +31,4 @@ const appointmentSchema = Schema(
 	}
 );
 
-export const Appointment = model("appointment",appointmentSchema);
+export const Appointment = model('appointment', appointmentSchema);
