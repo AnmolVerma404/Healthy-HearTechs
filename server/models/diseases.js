@@ -32,4 +32,4 @@ const diseaseSchema = Schema(
 	}
 );
 
-export const Diseases = model("diseases",diseaseSchema);
+export const Diseases = model('diseases', diseaseSchema);

@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-const symptomSchema = Schema(
+const specialitySchema = Schema(
 	{
 		name: {
 			type: String,
@@ -20,4 +20,4 @@ const symptomSchema = Schema(
 	}
 );
 
-export const Symptom = model('symptom', symptomSchema);
+export const Speciality = model('speciality', specialitySchema);
