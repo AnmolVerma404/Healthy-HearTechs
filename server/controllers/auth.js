@@ -5,7 +5,7 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 
-import User from "../models/user";
+import {User} from "../models/user.js";
 
 export const signup = async (req, res, next) => {
   const errors = validationResult(req);
@@ -20,6 +20,12 @@ export const signup = async (req, res, next) => {
   const password = req.body.password;
   const phone_number = req.body.phone_number;
   try {
+    const emailExist = await User.findOne({email: email});
+    if(emailExist){
+      const error = new Error('Email already exists. Please try using a different email.');
+      error.stausCode = 401;
+      throw error;
+    }
     const hashedPw = await bcrypt.hash(password, 12);
     const user = new User({
       email: email,
