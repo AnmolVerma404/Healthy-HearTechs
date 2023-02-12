@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --teal: #09a7a1;
+  --orange: #ff8000;
+  --raspbarry: #ff007a;
+  --neon-pink: #ff14bd;
+  --cream-brown: #31202b;
+  --cyan: #00ffff;
+  --midnight-voilet: #1f242d;
+  --groung-green: #07252d;
+  --text-btn-main-color: #54bf8b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  overflow: hidden;
+}
+
+.maincontainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.maincontainer .signInPg {
+  height: 100%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+}
+
+.maincontainer .signInPg .Title {
+  height: 10%;
+}
+
+.maincontainer .signInPg .Title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.maincontainer .Title .svgLogo {
+  padding: 1rem 1rem 1rem 1rem;
+  height: 60px;
+}
+
+.maincontainer .signInPg .Title .websitename {
+  font-size: 30px;
+  color: var(--black);
+}
+
+.maincontainer .signInPg .form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.maincontainer .signInPg .form .heading {
+  font-size: 40px;
+  color: var(--black);
+}
+
+.maincontainer .signInPg .form .formContent {
+  height: 30%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.maincontainer .signInPg .form .formContent input {
+  display: block;
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
+  padding: 2.2rem;
+  background-color: rgb(240, 240, 235);
+  border: none;
+  border-radius: 20px;
+  height: 5rem;
+  width: 40rem;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.maincontainer .signInPg .form .options {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2.2rem;
+}
+
+.maincontainer .signInPg .form .options .forgotPass a {
+  font-size: 12px;
+  padding-right: 20px;
+}
+
+.maincontainer .signInPg .form .options .createAccount a {
+  font-size: 1.2rem;
+  padding-left: 1.3rem;
+}
+
+.maincontainer .signInPg .form .options a:visited {
+  color: black;
+}
+
+.maincontainer .signInPg .form button {
+  cursor: pointer;
+  padding: 0.9rem;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 1.2rem;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #5bb98b;
+  border: none;
+  color: white;
+}
+
+.maincontainer .signInPg .form button:hover {
+  background-color: #17d978;
+}
+
+.maincontainer .signUpPg{
+  height: 100%;
+  width: 35%;
+  background-color: #5bb98b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../../../../client/image/pageFiveBackground.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;  
+}
+
+.maincontainer .signUpPg .signUpContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  color: white;
+}
+
+.maincontainer .signUpPg .signUpContent .heading{
+  padding: 5%;
+}
+
+.maincontainer .signUpPg .signUpContent .heading h1{
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.maincontainer .signUpPg .signUpContent .content{
+  padding: 4%;
+}
+
+.maincontainer .signUpPg .signUpContent .content h3{
+  font-size: 1.8rem;  
+}
+
+.maincontainer .signUpPg .signUpContent .btn{
+  background-color: white;
+  padding: 1.5% 10% 1.5% 10%;
+  border-radius: 8px;
+}
+
+.maincontainer .signUpPg .signUpContent .btn a{
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;  
+}
+
+.maincontainer .signUpPg .signUpContent .btn:hover{
+  background-color: rgb(236, 235, 134);
+}
