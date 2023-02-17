@@ -18,6 +18,12 @@ const allopathicSchema = Schema(
 				required: false,
 			},
 		],
+		causes_id: [
+			{
+				type: Schema.Types.ObjectId,
+				required: false,
+			},
+		],
 	},
 	{
 		timestamps: true,
