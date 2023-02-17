@@ -20,6 +20,10 @@ const diseaseSchema = Schema(
 			type: Schema.Types.ObjectId,
 			required: false,
 		},
+		treatment_id:{
+			type: Schema.Types.ObjectId,
+			required: false,
+		}
 	},
 	{
 		timestamps: true,
