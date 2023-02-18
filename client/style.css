@@ -35,6 +35,10 @@
   background: rgb(0, 52, 22);
 }
 
+.anchorWhite {
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -47,8 +51,7 @@
 .maincontainer {
   height: 100vh;
   width: 100vw;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
 .maincontainer .pageOne {
