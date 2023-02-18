@@ -4,6 +4,7 @@ import * as dotenv from 'dotenv';
 import cookieSession from 'cookie-session';
 
 import authRoutes from './routes/auth.js';
+import medicalRoutes from './routes/medical.js';
 
 const app = express();
 
@@ -29,6 +30,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/medical', medicalRoutes);
 
 app.use((error, req, res, next) => {
 	const status = error.statusCode || 500;

@@ -14,13 +14,13 @@ const allopathicSchema = Schema(
 		},
 		side_effect: [
 			{
-				type: Schema.Types.ObjectId,
+				name:String,
 				required: false,
 			},
 		],
-		causes_id: [
+		causes: [
 			{
-				type: Schema.Types.ObjectId,
+				name:String,
 				required: false,
 			},
 		],
