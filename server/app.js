@@ -28,7 +28,7 @@ app.use((req, res, next) => {
 	next();
 });
 
-app.use('/auth', authRoutes);
+app.use('/api/auth', authRoutes);
 
 app.use((error, req, res, next) => {
 	const status = error.statusCode || 500;
