@@ -18,7 +18,7 @@ const allopathicSchema = Schema(
 				required: false,
 			},
 		],
-		causes_id: [
+		causes: [
 			{
 				name:String,
 				required: false,
