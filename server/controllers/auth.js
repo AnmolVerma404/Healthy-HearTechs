@@ -19,6 +19,7 @@ export const signup = async (req, res, next) => {
 	const name = req.body.name;
 	const password = req.body.password;
 	const phone_number = req.body.phone_number;
+	const confirmPassword = req.body.confirmPassword;
 	try {
 		const emailExist = await User.findOne({ email: email });
 		if (emailExist) {
@@ -26,6 +27,11 @@ export const signup = async (req, res, next) => {
 				'Email already exists. Please try using a different email.'
 			);
 			error.stausCode = 401;
+			throw error;
+		}
+		if(password.trim() !== confirmPassword.trim()){
+			const error = new Error('Passwords do not match. Please enter carefully!');
+			error.statusCode = 401;
 			throw error;
 		}
 		const hashedPw = await bcrypt.hash(password, 12);
