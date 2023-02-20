@@ -30,7 +30,7 @@
   align-items: center;
 }
 
-.maincontainer .signInPg {
+.maincontainer .signUpPg {
   height: 100%;
   width: 65%;
   display: flex;
@@ -38,11 +38,11 @@
   background-color: var(--white);
 }
 
-.maincontainer .signInPg .Title {
+.maincontainer .signUpPg .Title {
   height: 7%;
 }
 
-.maincontainer .signInPg .Title {
+.maincontainer .signUpPg .Title {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -53,12 +53,12 @@
   height: 45px;
 }
 
-.maincontainer .signInPg .Title .websitename {
+.maincontainer .signUpPg .Title .websitename {
   font-size: 25px;
   color: var(--black);
 }
 
-.maincontainer .signInPg .form {
+.maincontainer .signUpPg .form {
   height: 100%;
   width: 100%;
   display: flex;
@@ -67,32 +67,31 @@
   align-items: center;
 }
 
-.maincontainer .signInPg .form .heading {
+.maincontainer .signUpPg .form .heading {
   font-size: 40px;
   color: var(--black);
 }
 
-.maincontainer .signInPg .form .formContent {
-  height: 40%;
+.maincontainer .signUpPg .form .formContent {
+  height: 66%;
   width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.maincontainer .signInPg .form .formContent form{
+.maincontainer .signUpPg .form .formContent form{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.maincontainer .signInPg .form .formContent input {
+.maincontainer .signUpPg .form .formContent input {
   display: block;
-  margin-top: 2rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
   padding: 2.2rem;
   background-color: rgb(240, 240, 235);
   border: none;
@@ -103,26 +102,7 @@
   font-weight: 600;
 }
 
-.maincontainer .signInPg .form .formContent input[type="button"] {
-  background-color: transparent;
-  font-size: 12px;
-  font-weight: 300;
-  justify-content: center;
-  text-decoration-line: underline;
-}
-
-.maincontainer .signInPg .form input[type="button"] {
-  cursor: pointer;
-  border-radius: 1.2rem;
-  margin-top: 0;
-  font-size: 15px;
-  font-weight: 600;
-  background-color: #5bb98b;
-  border: none;
-  color: black;
-}
-
-.maincontainer .signInPg .form input[type="submit"] {
+.maincontainer .signUpPg .form input[type="submit"] {
   cursor: pointer;
   padding: 0.9rem;
   margin-top: 3.2rem;
@@ -133,62 +113,71 @@
   font-weight: 800;
   background-color: var(--text-btn-main-color);
   border: none;
-  color: white;
+  color: white;  
 }
 
-.maincontainer .signInPg .form input[type="submit"]:hover {
+.maincontainer .signUpPg .form input[type="submit"]:hover {
   background-color: #17d978;
 }
 
-.maincontainer .signUpPg{
+.maincontainer .signInPg{
   height: 100%;
-  width: 35%;
+  width: 35%;  
   background-color: #5bb98b;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("../../../../client/image/pageFiveBackground.png");
+  background-image: url("../../../../client/image/signUpBg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-.maincontainer .signUpPg .signUpContent{
+.maincontainer .signInPg .signInContent{
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
+  margin-top: 20%;
 }
 
-.maincontainer .signUpPg .signUpContent .heading{
+.maincontainer .signInPg .signInContent .heading{
   padding: 5%;
 }
 
-.maincontainer .signUpPg .signUpContent .heading h1{
-  font-size: 6rem;
+.maincontainer .signInPg .signInContent .heading h1{
+  font-size: 3.6rem;
   font-weight: 800;
 }
 
-.maincontainer .signUpPg .signUpContent .content{
+.maincontainer .signInPg .signInContent .content{
   padding: 4%;
 }
 
-.maincontainer .signUpPg .signUpContent .content h3{
+.maincontainer .signInPg .signInContent .content h3{
   font-size: 1.8rem;
 }
 
-.maincontainer .signUpPg .signUpContent .btn{
+.maincontainer .signInPg .signInContent .btn{
   background-color: white;
-  padding: 1.5% 10% 1.5% 10%;
+  padding: 1.5% 10% 2.2% 10%;
   border-radius: 8px;
+  justify-content: center;
+  align-items: center;
 }
 
-.maincontainer .signUpPg .signUpContent .btn a{
+.maincontainer .signInPg .signInContent .btn a{
   color: black;
   font-size: 1.5rem;
   font-weight: 600;
   text-decoration: none;
 }
 
-.maincontainer .signUpPg .signUpContent .btn:hover{
+.maincontainer .signInPg .signInContent .btn:hover{
   background-color: rgb(236, 235, 134);
+}
+
+.maincontainer .signInPg .signInContent .doctorImg img{
+  margin-top: 20%;
+  height: 80%;
+  width: 100%;
 }
