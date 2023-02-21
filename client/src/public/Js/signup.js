@@ -20,11 +20,10 @@ submit.addEventListener('click', async e => {
                 phone_number,
                 confirmPassword,
             });
-            console.log(response)
+            window.location.href = '/src/views/signin.html';
         } catch (error) {
             console.log(error);
         }
-        // console.log(name,phone_number,email,password,confirmPassword);
 	} else {
 		console.log('Wrong');
 	}
