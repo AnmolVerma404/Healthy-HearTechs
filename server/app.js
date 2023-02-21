@@ -2,13 +2,14 @@ import express from 'express';
 import mongoose from 'mongoose';
 import * as dotenv from 'dotenv';
 import cookieSession from 'cookie-session';
-
+import cors from 'cors';
 import authRoutes from './routes/auth.js';
 import medicalRoutes from './routes/medical.js';
 
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 app.set('trust proxy', true);
 dotenv.config();
 
