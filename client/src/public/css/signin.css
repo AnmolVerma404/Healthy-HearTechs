@@ -111,7 +111,7 @@
   text-decoration-line: underline;
 }
 
-.maincontainer .signInPg .form input[type="button"] {
+/* .maincontainer .signInPg .form input[type="button"] {
   cursor: pointer;
   border-radius: 1.2rem;
   margin-top: 0;
@@ -120,9 +120,9 @@
   background-color: #5bb98b;
   border: none;
   color: black;
-}
+} */
 
-.maincontainer .signInPg .form input[type="submit"] {
+.maincontainer .signInPg .form button[type="submit"] {
   cursor: pointer;
   padding: 0.9rem;
   margin-top: 3.2rem;
@@ -136,7 +136,7 @@
   color: white;
 }
 
-.maincontainer .signInPg .form input[type="submit"]:hover {
+.maincontainer .signInPg .form button[type="submit"]:hover {
   background-color: #17d978;
 }
 
