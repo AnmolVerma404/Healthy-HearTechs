@@ -116,7 +116,7 @@
 	color: white;
 }
 
-.maincontainer .signUpPg .form input[type='submit']:hover {
+.maincontainer .signUpPg .form button[type='submit']:hover {
 	background-color: #17d978;
 }
 
