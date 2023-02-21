@@ -132,16 +132,16 @@
 .maincontainer .pageOne .headerPgOne .rightHeader .buttonMakeApp {
   margin-right: 2rem;
 }
-.maincontainer .pageOne .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton {
+.maincontainer .pageOne .headerPgOne .rightHeader .buttonMakeApp .signButton {
   cursor: pointer;
   padding: 1.5rem;
   border-radius: 1.5rem;
-  font-size: 1.5rem;
   font-weight: 600;
   background-color: #5bb98b;
   border: none;
 }
-.maincontainer .pageOne .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton .appointmentAnchor {
+.maincontainer .pageOne .headerPgOne .rightHeader .buttonMakeApp .signButton .signAnchor {
+  font-size: 1.5rem;
   color: white;
   background-color: transparent;
   text-decoration: none;

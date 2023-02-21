@@ -150,15 +150,15 @@
 				}
 				.buttonMakeApp {
 					margin-right: 2rem;
-					.makeAppointmentButton {
+					.signButton {
 						cursor: pointer;
 						padding: 1.5rem;
 						border-radius: 1.5rem;
-						font-size: 1.5rem;
 						font-weight: 600;
 						background-color: #5bb98b;
 						border: none;
-						.appointmentAnchor {
+						.signAnchor {
+							font-size: 1.5rem;
 							color: white;
 							background-color: transparent;
 							text-decoration: none;
