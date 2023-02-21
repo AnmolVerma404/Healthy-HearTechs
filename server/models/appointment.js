@@ -4,7 +4,7 @@ const appointmentSchema = Schema(
 	{
 		doctor_id: {
 			type: Schema.Types.ObjectId,
-			required: true,
+			required: false,
 			minlength: 1,
 			trim: true,
 		},
@@ -13,11 +13,17 @@ const appointmentSchema = Schema(
 			default: Date.now(),
 			required: true,
 		},
-		location: {
+		mobile_number: {
 			type: String,
-			required: true,
-			minlength: 1,
-			trim: true,
+			required: false,
+		},
+		medicine: {
+			type: String,
+			required: false,
+		},
+		cause: {
+			type: String,
+			required: false,
 		},
 	},
 	{
