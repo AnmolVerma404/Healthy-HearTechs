@@ -1,6 +1,7 @@
 import { validationResult } from 'express-validator';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import cookie from 'cookie';
 import * as dotenv from 'dotenv';
 
 dotenv.config();
@@ -80,7 +81,12 @@ export const login = async (req, res, next) => {
 			process.env.JWT_KEY,
 			{ expiresIn: '1h' }
 		);
-		console.log('The token', token);
+		// console.log('The token', token);
+		res.setHeader('Set-Cookie',cookie.serialize('jwt',token,{
+			httpOnly:false,
+			domain:'http://localhost:5173/',
+			'path':'/'
+		}))
 		req.session = {
 			jwt: token,
 		};
