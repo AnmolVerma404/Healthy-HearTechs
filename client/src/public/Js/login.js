@@ -14,10 +14,11 @@ submit.addEventListener("click", async (event) => {
         email,
         password,
       });
-      console.log(response);
-      console.log(response.data.token);
-      document.cookie = `session=${response.data.token}; domain=localhost`;
-      window.location.href = "../../index.html";
+      // console.log(response);
+      console.log("Coolkie: ",response.data.token);
+      // document.cookie = `value=${response.data.token}; domain=localhost`;
+      document.cookie = `${response.data.token}`;
+      // window.location.href = "../../index.html";
     } catch (error) {
       console.log(error);
     }

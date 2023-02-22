@@ -29,8 +29,10 @@ export const signup = async (req, res, next) => {
 			error.stausCode = 401;
 			throw error;
 		}
-		if(password.trim() !== confirmPassword.trim()){
-			const error = new Error('Passwords do not match. Please enter carefully!');
+		if (password.trim() !== confirmPassword.trim()) {
+			const error = new Error(
+				'Passwords do not match. Please enter carefully!'
+			);
 			error.statusCode = 401;
 			throw error;
 		}
@@ -72,6 +74,7 @@ export const login = async (req, res, next) => {
 		const token = jwt.sign(
 			{
 				email: loadedUser.email,
+				name:loadedUser.name,
 				userId: loadedUser._id.toString(),
 			},
 			process.env.JWT_KEY,
@@ -93,7 +96,11 @@ export const login = async (req, res, next) => {
 export const user = async (req, res, next) => {
 	const userData = req.currentUser;
 	console.log('User data', userData);
-	res.send(`Hello User - ${userData.email}`);
+	res.status(200).json({
+		success: true,
+		message: 'Signed In',
+		data: userData,
+	});
 };
 
 export const signout = async (req, res, next) => {
