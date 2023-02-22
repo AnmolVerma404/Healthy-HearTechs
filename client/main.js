@@ -14,10 +14,12 @@ const isAuthenticated = async () => {
 		const name = response.data.data.name;
 		if (response.data.success) {
 			isAuth.innerText = 'Sign Out';
-			isAuth.href = '';
+			isAuth.href = './src/views/signout.html';
+			isAuth.classList.add('jsOut');
 			userEl.innerText = name.length > 6 ? name.substring(0, 5) + '...' : name;
 		} else {
 			isAuth.innerText = 'Sign Up/In';
+			isAuth.classList.remove('jsOut');
 			isAuth.href = './src/views/signup.html';
 		}
 	} catch (error) {
@@ -27,7 +29,11 @@ const isAuthenticated = async () => {
 	}
 };
 
+const signoutHandler = () => {
+};
+
 isAuthenticated();
+signoutHandler();
 
 // isAuth.addEventListener('click',()=>{
 
