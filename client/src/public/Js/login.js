@@ -14,9 +14,8 @@ submit.addEventListener("click", async (event) => {
         email,
         password,
       });
-      console.log(response);
-      console.log(response.data.token);
-      document.cookie = `session=${response.data.token}; domain=localhost`;
+      console.log("Coolkie: ",response.data.token);
+      document.cookie = `jwt=${response.data.token}; path=/`;
       window.location.href = "../../index.html";
     } catch (error) {
       console.log(error);

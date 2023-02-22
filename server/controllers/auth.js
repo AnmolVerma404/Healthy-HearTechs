@@ -1,6 +1,7 @@
 import { validationResult } from 'express-validator';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import cookie from 'cookie';
 import * as dotenv from 'dotenv';
 
 dotenv.config();
@@ -29,8 +30,10 @@ export const signup = async (req, res, next) => {
 			error.stausCode = 401;
 			throw error;
 		}
-		if(password.trim() !== confirmPassword.trim()){
-			const error = new Error('Passwords do not match. Please enter carefully!');
+		if (password.trim() !== confirmPassword.trim()) {
+			const error = new Error(
+				'Passwords do not match. Please enter carefully!'
+			);
 			error.statusCode = 401;
 			throw error;
 		}
@@ -72,16 +75,22 @@ export const login = async (req, res, next) => {
 		const token = jwt.sign(
 			{
 				email: loadedUser.email,
+				name:loadedUser.name,
 				userId: loadedUser._id.toString(),
 			},
 			process.env.JWT_KEY,
 			{ expiresIn: '1h' }
 		);
-		console.log('The token', token);
+		// console.log('The token', token);
+		res.setHeader('Set-Cookie',cookie.serialize('jwt',token,{
+			httpOnly:false,
+			domain:'http://localhost:5173/',
+			'path':'/'
+		}))
 		req.session = {
 			jwt: token,
 		};
-		res.status(200).json({ token: token, userId: loadedUser._id.toString() });
+		res.status(200).json({ token: token, userId: loadedUser._id.toString(),name:loadedUser.name });
 	} catch (err) {
 		if (!err.statusCode) {
 			err.statusCode = 500;
@@ -93,7 +102,11 @@ export const login = async (req, res, next) => {
 export const user = async (req, res, next) => {
 	const userData = req.currentUser;
 	console.log('User data', userData);
-	res.send(`Hello User - ${userData.email}`);
+	res.status(200).json({
+		success: true,
+		message: 'Signed In',
+		data: userData,
+	});
 };
 
 export const signout = async (req, res, next) => {

@@ -21,7 +21,7 @@ router.post(
 
 router.post('/login', login);
 
-router.get('/user', isAuth, user);
+router.post('/user', isAuth, user);
 
 router.post('/signout', signout);
 

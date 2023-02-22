@@ -249,11 +249,13 @@
   border: none;
   padding: 2rem;
   width: 15rem;
-  font-size: 1.7rem;
-  font-weight: 500;
   border-radius: 2rem;
   box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
   cursor: pointer;
+}
+.maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom .numbersReg button p {
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 .maincontainer .pageOne .restPgOne .leftPgOne .leftPgOneBottom .imgleftPgOneBottom .a {
   top: 10%;
