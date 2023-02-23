@@ -196,8 +196,17 @@
     line-height: 1.5;
 }
 
-.maincontainer .restPg .left .left_image img {
-    width: 500px;
-    height: 300px;
-   
+.maincontainer .restPg .left .left_image{
+    display: flex;
+}
+
+.maincontainer .restPg .left .left_image .female_image {
+  flex: 50%;
+  margin-left: -10%;
+  width: 100%;
+}
+.maincontainer .restPg .left .left_image .male_image {
+  flex: 50%;
+  margin-top: -5%;
+  margin-left: -15%;
 }
