@@ -106,14 +106,14 @@
   cursor: pointer;
   padding: 1.5rem;
   border-radius: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 200;
   background-color: #5bb98b;
   border: none;
 }
 .maincontainer .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton .appointmentAnchor {
   color: black;
   font-weight: 600;
+  font-size: 1.3rem;
   background-color: transparent;
   text-decoration: none;
 }
@@ -169,6 +169,7 @@
 }
 
 .maincontainer .restPg .right .right-right , .right-left{
+  box-shadow: 2px 2px 5px 0.5px #292929;
     background-color: rgb(193, 206, 201);
     margin: 10px;
     border: none;
@@ -182,11 +183,11 @@
 }
 
 .maincontainer .restPg .right .right-right {
+  box-shadow: 2px 2px 5px 0.5px #292929;
     margin-left: 1.5%;
 }
 
  .maincontainer .restPg  .right .right_image {
-
     margin-top: 6%;
 }
 
@@ -203,7 +204,7 @@
 .maincontainer .restPg .right .para h3 {
     font-family: 'Poppins', sans-serif;
     margin-top: 8%;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.5;
 }
 
