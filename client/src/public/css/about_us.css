@@ -31,13 +31,14 @@
   width: 100%;
   font-family: "Poppins", sans-serif;
   display: flex;
+  background-color: white;
   justify-content: space-around;
   align-items: center;
 }
 .maincontainer .headerPgOne .leftHeader {
   height: 100%;
   width: 30rem;
-  /* background-color: var(--raspbarry); */
+  background-color: white;
   display: flex;
   flex-direction: row;
 }
@@ -45,7 +46,7 @@
   padding: 1rem 0rem 0rem 1rem;
 }
 .maincontainer .headerPgOne .leftHeader .logoSvgDiv .svgLogo {
-  height: 5rem;
+  height: 4rem;
 }
 .maincontainer .headerPgOne .leftHeader .textlogoDiv {
   display: flex;
@@ -54,12 +55,13 @@
   align-items: center;
 }
 .maincontainer .headerPgOne .leftHeader .textlogoDiv .heartPulseImgDiv .heartPulseImg {
-  height: 5.2rem;
+  height: 4rem;
+  margin-top: 5px;
 }
 .maincontainer .headerPgOne .leftHeader .textlogoDiv .websiteNameDiv .websiteName {
-  margin-top: 0.4rem;
-  font-size: 1.6rem;
-  color: white;
+  margin-top: 0.2rem;
+  font-size: 1.3rem;
+  color: black;
 }
 .maincontainer .headerPgOne .rightHeader {
   height: 100%;
@@ -77,7 +79,7 @@
   margin: 2rem;
 }
 .maincontainer .headerPgOne .rightHeader .navBar ul li button {
-  background-color: transparent;
+  background-color: white;
   border: none;
   padding: 1rem;
 }
@@ -88,14 +90,14 @@
   background-color: transparent;
   text-decoration: none;
   border: none;
-  padding: 1rem;
-  color: #fff;
+  color: black;
 }
 .maincontainer .headerPgOne .rightHeader .navBar ul li a:visited {
-  color: #fff;
+  color: black;
 }
 .maincontainer .headerPgOne .rightHeader .navBar ul li a:hover {
-  color: #000;
+  color: #0e5b36;
+  font-size: large;
 }
 .maincontainer .headerPgOne .rightHeader .buttonMakeApp {
   margin-right: 2rem;
@@ -104,13 +106,14 @@
   cursor: pointer;
   padding: 1.5rem;
   border-radius: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 200;
   background-color: #5bb98b;
   border: none;
 }
 .maincontainer .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton .appointmentAnchor {
-  color: white;
+  color: black;
+  font-weight: 600;
+  font-size: 1.3rem;
   background-color: transparent;
   text-decoration: none;
 }
@@ -134,19 +137,29 @@
     margin-left: 10%;
     height: 89%;
     width: 50%;
-    margin-top: 2%;
-    margin-right: 3.5%;
+    margin-top: 1%;
 }
 
 .maincontainer .restPg .left .Heading {
-    margin-top: 10%;
+    margin-top: 8%;
 }
 .maincontainer .restPg .left .Heading p{
-    font-size: 3rem;
+    font-size: 3.8rem;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
 }
+
+.maincontainer .restPg .left .Heading .heading_green{
+  font-size: 4rem;
+  font-weight: 900;
+  color: #1c8b55;
+  font-family: 'Poppins', sans-serif;
+}
+
 .maincontainer .restPg .left .information p {
-   
-    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    width: 95%;
+    font-size: 1.5rem;
 }
 
  .maincontainer .restPg .right .upper,
@@ -156,6 +169,7 @@
 }
 
 .maincontainer .restPg .right .right-right , .right-left{
+  box-shadow: 2px 2px 5px 0.5px #292929;
     background-color: rgb(193, 206, 201);
     margin: 10px;
     border: none;
@@ -169,11 +183,11 @@
 }
 
 .maincontainer .restPg .right .right-right {
+  box-shadow: 2px 2px 5px 0.5px #292929;
     margin-left: 1.5%;
 }
 
  .maincontainer .restPg  .right .right_image {
-
     margin-top: 6%;
 }
 
@@ -182,18 +196,29 @@
 }
 
 .maincontainer .restPg .right .para p {
-    margin-top: 8%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1%;
     font-size: 1.25rem;
     line-height: 1.5;
 }
 .maincontainer .restPg .right .para h3 {
+    font-family: 'Poppins', sans-serif;
     margin-top: 8%;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.5;
 }
 
-.maincontainer .restPg .left .left_image img {
-    width: 500px;
-    height: 300px;
-   
+.maincontainer .restPg .left .left_image{
+    display: flex;
+}
+
+.maincontainer .restPg .left .left_image .female_image {
+  flex: 50%;
+  margin-left: -10%;
+  width: 100%;
+}
+.maincontainer .restPg .left .left_image .male_image {
+  flex: 50%;
+  margin-top: -5%;
+  margin-left: -15%;
 }
