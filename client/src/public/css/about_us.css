@@ -148,7 +148,16 @@
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
 }
+
+.maincontainer .restPg .left .Heading .heading_green{
+  font-size: 4rem;
+  font-weight: 900;
+  color: #1c8b55;
+  font-family: 'Poppins', sans-serif;
+}
+
 .maincontainer .restPg .left .information p {
+    font-family: 'Poppins', sans-serif;
     width: 95%;
     font-size: 1.5rem;
 }
@@ -186,11 +195,13 @@
 }
 
 .maincontainer .restPg .right .para p {
+    font-family: 'Poppins', sans-serif;
     margin-top: 1%;
     font-size: 1.25rem;
     line-height: 1.5;
 }
 .maincontainer .restPg .right .para h3 {
+    font-family: 'Poppins', sans-serif;
     margin-top: 8%;
     font-size: 1.25rem;
     line-height: 1.5;
