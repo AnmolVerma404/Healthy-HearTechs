@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --teal: #09a7a1;
+  --orange: #ff8000;
+  --raspbarry: #ff007a;
+  --neon-pink: #ff14bd;
+  --cream-brown: #31202b;
+  --cyan: #00ffff;
+  --midnight-voilet: #1f242d;
+  --groung-green: #07252d;
+  --text-btn-main-color: #54bf8b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  overflow: hidden;
+}
+
+.maincontainer {
+  height: 100vh;
+  width: 100vw;
+  background: url("../../../image/history_bg.png") no-repeat center center/cover;
+}
+
+.maincontainer .headerPg {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0% auto;
+  /* border-radius: 40px; */
+  background-color: #ffffff21;
+}
+.maincontainer .headerPg .leftHeader {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.maincontainer .headerPg .leftHeader .logoSvgDiv {
+  padding: 1rem 1rem 1rem 1rem;
+}
+.maincontainer .headerPg .leftHeader .logoSvgDiv .svgLogo {
+  height: 36px;
+}
+.maincontainer .headerPg .leftHeader .textlogoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .headerPg .leftHeader .textlogoDiv .websiteNameDiv .websiteName {
+  font-size: 25px;
+}
+.maincontainer .headerPg .rightHeader {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 2%;
+}
+.maincontainer .headerPg .rightHeader .navBar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .headerPg .rightHeader .navBar ul li button {
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+}
+.maincontainer .headerPg .rightHeader .navBar ul li a {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  padding: 3rem;
+  color: black;
+}
+.maincontainer .headerPg .rightHeader .navBar ul li a:visited {
+  color: #0000;
+}
+.maincontainer .headerPg .rightHeader .navBar ul li a:hover {
+  color: #efc28b;
+}
+.maincontainer .restPg {
+  height: 90%;
+  width: 100%;
+  margin: 1% 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .restPg .leftPg {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .restPg .leftPg .googleMap {
+  height: 90%;
+  width: 90%;
+  box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.25);
+}
+.maincontainer .restPg .leftPg .googleMap iframe {
+  border: none;
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+}
+.maincontainer .restPg .rightPg {
+  height: 100%;
+  width: 45%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.maincontainer .restPg .rightPg .form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .restPg .rightPg .form .formHeading {
+  height: 10%;
+  width: 100%;
+}
+.maincontainer .restPg .rightPg .form .formHeading h1 {
+  font-size: 3.2rem;
+  color: #00ff82;
+  margin: 14px;
+  padding: 10px;
+}
+.maincontainer .restPg .rightPg .form .formContent {
+    height: 80%;
+    width: 100%;
+}
+
+.maincontainer .restPg .rightPg .form .formContent form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+.maincontainer .restPg .rightPg .form .formContent form input{
+    padding: 32px;
+    border-radius: 40px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.maincontainer .restPg .rightPg .form .formContent form input[type="submit"]{
+    background-color: rgb(20, 61, 8);
+    color: white;
+    margin: 5% auto;
+    border-radius: 10px;
+    width: 40%;
+    cursor: pointer;
+    line-height: 0%;
+}
+
+.maincontainer .restPg .rightPg .form .formContent form input[type="submit"]:hover{
+    background-color: #25c075;
+}
