@@ -566,11 +566,13 @@
   width: 10rem;
   height: 4rem;
   margin-left: 5rem;
+  margin-bottom: 1rem;
   color: #fff;
   font-size: 1.3rem;
   border-radius: 1rem;
   border: none;
   background-color: #02492b;
+  cursor: pointer;
 }
 .maincontainer .pageThree .pg3Division .restContentPgThree .leftContentPg3 .injuries {
   display: flex;
@@ -906,7 +908,7 @@
   align-items: center;
 }
 .maincontainer .pageFive .lowerPgFive .pgfLDiv {
-  background: hsla(151deg, 100%, 8%, 0.72);
+  background: hsla(151, 100%, 8%, 0.72);
   height: 80%;
   width: 80%;
   margin: 2rem;
