@@ -18,7 +18,7 @@ const allopathicSchema = Schema(
 				required: false,
 			},
 		],
-		causes: [
+		symptoms: [
 			{
 				name:String,
 				required: false,
