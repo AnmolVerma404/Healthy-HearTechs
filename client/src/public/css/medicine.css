@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --teal: #09a7a1;
+  --orange: #ff8000;
+  --raspbarry: #ff007a;
+  --neon-pink: #ff14bd;
+  --cream-brown: #31202b;
+  --cyan: #00ffff;
+  --midnight-voilet: #1f242d;
+  --groung-green: #07252d;
+  --text-btn-main-color: #54bf8b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  overflow: hidden;
+}
+
+.maincontainer {
+  height: 100vh;
+  width: 100vw;
+}
+.maincontainer .headerPgOne {
+  height: 10%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  /* background-image:url("../../../../client/image/medicine_header.jpeg"); */
+  justify-content: space-around;
+  align-items: center;
+}
+.maincontainer .searchandTagLine::before{
+  content:"";
+  background-image:url("../../../../client/image/medicine_header.jpeg");
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 30%;
+  top: 0;
+  left: 0;
+}
+.maincontainer .headerPgOne .leftHeader {
+  height: 100%;
+  width: 30rem;
+  /* background-color: var(--raspbarry); */
+  display: flex;
+  flex-direction: row;
+}
+.maincontainer .headerPgOne .leftHeader .logoSvgDiv {
+  padding: 1rem 0rem 0rem 1rem;
+}
+.maincontainer .headerPgOne .leftHeader .logoSvgDiv .svgLogo {
+  height: 5rem;
+}
+.maincontainer .headerPgOne .leftHeader .textlogoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .headerPgOne .leftHeader .textlogoDiv .heartPulseImgDiv .heartPulseImg {
+  height: 5.2rem;
+}
+.maincontainer .headerPgOne .leftHeader .textlogoDiv .websiteNameDiv .websiteName {
+  margin-top: 0.4rem;
+  font-size: 1.6rem;
+  color: black;
+}
+.maincontainer .headerPgOne .rightHeader {
+  height: 100%;
+  width: 124rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.maincontainer .headerPgOne .rightHeader .navBar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer .headerPgOne .rightHeader .navBar ul li {
+  margin: 2rem;
+}
+.maincontainer .headerPgOne .rightHeader .navBar ul li button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  padding: 1rem;
+}
+.maincontainer .headerPgOne .rightHeader .navBar ul li a {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  padding: 1rem;
+  color: #fff;
+}
+.maincontainer .headerPgOne .rightHeader .navBar ul li a:visited {
+  color: #fff;
+}
+.maincontainer .headerPgOne .rightHeader .navBar ul li a:hover {
+  color: #000;
+}
+.maincontainer .headerPgOne .rightHeader .buttonMakeApp {
+  margin-right: 2rem;
+}
+.maincontainer .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton {
+  cursor: pointer;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #5bb98b;
+  border: none;
+}
+.maincontainer .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton .appointmentAnchor {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.maincontainer .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton:hover {
+  background-color: #17d978;
+}
+.maincontainer .searchandTagLine{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     /* background-image:url("../../../../client/image/medicine_header.jpeg"); */
+}
+.maincontainer .searchandTagLine .TagLine {
+    margin-left: 1.5%;
+    margin-top: 2%;
+}
+.maincontainer .searchandTagLine .TagLine p{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.maincontainer .searchandTagLine .TagLine span{
+    font-size: 30px;
+    color: #A5F1CC;
+    text-decoration:underline;
+}
+.maincontainer .searchandTagLine .search {
+  margin-left: 35%;
+}
+.maincontainer .searchandTagLine #Search{
+  width: 350px;
+  padding-left: 10px;
+  margin-top: 7%;
+  font-size: large;
+  height: 32%;
+  font-size: 15px;
+  border:none;
+  text-align: left;
+  border-radius: 7px;
+}
+.maincontainer .searchandTagLine #submit{
+  width: 130px;
+  text-align: center;
+  height: 30%;
+  font-weight: 700;
+  font-size: medium;
+  margin-left: 5px;
+  background-color: #02492B;
+  color: white;
+  border-radius: 7px;
+}
+.maincontainer .restPg {
+  display:flex;
+  height:70%;
+  width: 100%;
+  flex-direction: row;
+  background-image: url(../../../../client/image/medicine_page.jpg);
+}
+.maincontainer .restPg .left{
+  width: 50%;
+}
+.maincontainer .restPg .right{
+  width: 50%;
+}
+.maincontainer .restPg   .box{
+  height: 100%;
+  width: 100%;
+  background: none;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px 20px 20px;
+}
+.maincontainer  .ayur_text p {
+  color: #5EF3AA;
+  text-align: center;
+  font-size: 40px;
+}
+.maincontainer .restPg  .big{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+}
+.maincontainer .restPg  .box{
+  background:white;
+  height: 120px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+}
+.maincontainer .restPg  .box .img img{
+  width: 100px;
+  height: 110px;
+  margin-top: 4%;
+  margin-left: 10%;
+  justify-content: center;
+  border-radius: 2px`;
+  
+}
+.maincontainer .restPg  .box  .big .name{
+  margin-left: 7%;
+  height: 25%;
+}
+.maincontainer .restPg  .box  .big .name p{
+  font-weight: 800;
+  font-size: 16px;
+}
+.maincontainer .restPg .box .big .dandse{
+  margin-left: 5%;
+  height: 75%;
+}
+/* .maincontainer .restPg .box .big .dandse .dosage{
+} */
+.maincontainer .restPg  .box .big .dandse .dosage span{
+ font-weight: bold;
+ font-size: 13px;
+}
+.maincontainer .restPg  .box .big .dandse .dosage p{
+  font-size: 12px;
+}
+.maincontainer .restPg  .box .big .dandse .side_effects{
+  height: 100%;
+  margin-top: 2%;
+}
+.maincontainer .restPg  .box .big .dandse .side_effects p{
+  font-weight: bold;
+  font-size: 13px;
+}
+.maincontainer .restPg  .box .big .dandse .side_effects ul li{
+  font-size: 12px;
+  line-height: 1.2;
+}
+.maincontainer .restPg  .box .causes{
+  margin-left: 60%;
+  margin-top: -90px;
+}
+.maincontainer .restPg  .box .causes p{
+  font-weight: bold;
+  font-size: 13px;
+}
+.maincontainer .restPg  .box .causes ul li{
+  font-size: 12px;
+  line-height: 1.2;
+}
+.maincontainer .restPg .box .dandse .side_effects ul li{
+  list-style-type: disc;
+}
