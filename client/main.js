@@ -29,12 +29,18 @@ const isAuthenticated = async () => {
 	}
 };
 
-const signoutHandler = () => {
-};
+const homeSearch = () =>{
+	const searchButton = document.getElementById('jsHomeSearch');
+
+	searchButton.addEventListener('click',(e)=>{
+		e.preventDefault();
+		const searchText = document.getElementById('jsHomeSearchText').value;
+		if(searchText.length>1){
+			window.localStorage.setItem('searchText',searchText);
+			window.location.href = "./src/views/medicine_page.html";
+		}
+	})
+}
 
 isAuthenticated();
-signoutHandler();
-
-// isAuth.addEventListener('click',()=>{
-
-// })
+homeSearch();

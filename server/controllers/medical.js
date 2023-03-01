@@ -10,22 +10,24 @@ export const search = async (req, res, next) => {
 	console.log(searchText);
 	const foundAyurvedic = ayurvedic.filter(ayur => {
 		let foundCause = false;
-		ayur.causes.filter(cause => {
-			if (cause.name == searchText) {
+		const symptoms = ayur.symptoms
+		for(var i = 0;i<symptoms.length;++i){
+			if (symptoms[i].name == searchText) {
 				foundCause = true;
-				return;
+				break;
 			}
-		});
+		}
 		return ayur.name == searchText || ayur.dosage == searchText || foundCause;
 	});
 	const foundAllopathic = allopathic.filter(allo => {
 		let foundCause = false;
-		allo.causes.filter(cause => {
-			if (cause.name == searchText) {
+		const symptoms = allo.symptoms
+		for(var i = 0;i<symptoms.length;++i){
+			if (symptoms[i].name == searchText) {
 				foundCause = true;
-				return;
+				break;
 			}
-		});
+		}
 		return allo.name == searchText || allo.dosage == searchText || foundCause;
 	});
 	res.status(200).json({

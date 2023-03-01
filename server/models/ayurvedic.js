@@ -18,7 +18,7 @@ const ayurvedicSchema = Schema(
 				required: false,
 			},
 		],
-		causes: [
+		symptoms: [
 			{
 				name:String,
 				required: false,
