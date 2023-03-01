@@ -44,7 +44,7 @@ const searchTextFunc = async () => {
 				updateAyurvedic(ayurvedic,data);
 			}
 			if (allopathic.length > 0) {
-				// updateAllopathic(allopathic,data);
+				updateAllopathic(allopathic,data);
 			}
 		} catch (error) {}
 	});
@@ -62,7 +62,7 @@ const updateAllopathic = (allopathic,data) => {
 	for (var i = 0; i < allopathic.length && i < 3; ++i) {
 		// console.log(allopathic[i]);
         data.count++;
-        // alloMedShow(allopathic[i],data)
+        alloMedShow(allopathic[i],data)
 	}
 };
 
@@ -134,21 +134,21 @@ const alloMedShow = ({ name, dosage, side_effect, symptoms },{count}) =>{
         <img src="../../image/about_us_img1.jpg">
     </div>
     <div class="big">
-        <div class="name" id="name4">
+        <div class="name" id="name${count}">
             <p>${name}</p>
         </div>
         <div class="dandse">
-            <div class="dosage" id="dosage4">
+            <div class="dosage" id="dosage${count}">
                 <p><span>Dosage:</span>${dosage}</p>
             </div>
-            <div class="side_effects" id="side_effects4">
+            <div class="side_effects" id="side_effects${count}">
                 <p>Side Effects:</p>
                 <ul>
                     ${side_effectList}
                 </ul>
             </div>
         </div>
-        <div class="causes" id="causes4">
+        <div class="causes" id="causes${count}">
             <p>Symptoms:</p>
             <ul>
                 ${symptoms}
