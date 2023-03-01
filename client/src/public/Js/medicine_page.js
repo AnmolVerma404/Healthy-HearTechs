@@ -151,7 +151,7 @@ const alloMedShow = ({ name, dosage, side_effect, symptoms },{count}) =>{
         <div class="causes" id="causes${count}">
             <p>Symptoms:</p>
             <ul>
-                ${symptoms}
+                ${symptomsList}
             </ul>
         </div>
     </div>
