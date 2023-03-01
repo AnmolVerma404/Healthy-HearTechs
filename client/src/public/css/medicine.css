@@ -47,6 +47,7 @@
 .maincontainer .headerPgOne .leftHeader {
   height: 100%;
   width: 30rem;
+  /* background-color: white; */
   /* background-color: var(--raspbarry); */
   display: flex;
   flex-direction: row;
@@ -55,7 +56,7 @@
   padding: 1rem 0rem 0rem 1rem;
 }
 .maincontainer .headerPgOne .leftHeader .logoSvgDiv .svgLogo {
-  height: 5rem;
+  height: 4rem;
 }
 .maincontainer .headerPgOne .leftHeader .textlogoDiv {
   display: flex;
@@ -64,11 +65,12 @@
   align-items: center;
 }
 .maincontainer .headerPgOne .leftHeader .textlogoDiv .heartPulseImgDiv .heartPulseImg {
-  height: 5.2rem;
+  height: 4rem;
+  margin-top: 5px;
 }
 .maincontainer .headerPgOne .leftHeader .textlogoDiv .websiteNameDiv .websiteName {
-  margin-top: 0.4rem;
-  font-size: 1.6rem;
+  margin-top: 0.2rem;
+  font-size: 1.3rem;
   color: black;
 }
 .maincontainer .headerPgOne .rightHeader {
@@ -107,6 +109,7 @@
 }
 .maincontainer .headerPgOne .rightHeader .navBar ul li a:hover {
   color: #000;
+  font-size: large;
 }
 .maincontainer .headerPgOne .rightHeader .buttonMakeApp {
   margin-right: 2rem;
@@ -115,19 +118,21 @@
   cursor: pointer;
   padding: 1.5rem;
   border-radius: 1.5rem;
-  font-size: 1.5rem;
   font-weight: 600;
   background-color: #5bb98b;
   border: none;
 }
 .maincontainer .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton .appointmentAnchor {
-  color: white;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.3rem;
   background-color: transparent;
   text-decoration: none;
 }
 .maincontainer .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton:hover {
   background-color: #17d978;
 }
+
 .maincontainer .searchandTagLine{
     display: flex;
     flex-direction: row;
@@ -137,7 +142,7 @@
      /* background-image:url("../../../../client/image/medicine_header.jpeg"); */
 }
 .maincontainer .searchandTagLine .TagLine {
-    margin-left: 1.5%;
+    margin-left: 3.5%;
     margin-top: 2%;
 }
 .maincontainer .searchandTagLine .TagLine p{
@@ -146,34 +151,42 @@
 }
 
 .maincontainer .searchandTagLine .TagLine span{
-    font-size: 30px;
-    color: #A5F1CC;
+    font-size: 35px;
+    color: #52fcaa;
+    text-shadow: 2.5px 2px 1px #000;
     text-decoration:underline;
 }
 .maincontainer .searchandTagLine .search {
-  margin-left: 35%;
+  margin-left: 40%;
 }
 .maincontainer .searchandTagLine #Search{
-  width: 350px;
-  padding-left: 10px;
+  width: 400px;
+  padding-left: 20px;
   margin-top: 7%;
   font-size: large;
   height: 32%;
   font-size: 15px;
   border:none;
   text-align: left;
-  border-radius: 7px;
+  border-radius: 10px;
+  box-shadow: 2.5px 5px 7px 2px rgba(0, 0, 0, 0.539);
 }
 .maincontainer .searchandTagLine #submit{
-  width: 130px;
+  width: 120px;
   text-align: center;
   height: 30%;
   font-weight: 700;
   font-size: medium;
-  margin-left: 5px;
+  margin-left: 15px;
   background-color: #02492B;
   color: white;
+  box-shadow: 1px 3px 7px 2px rgba(0, 0, 0, 0.539);
   border-radius: 7px;
+}
+
+.maincontainer .searchandTagLine #submit:hover{
+  background-color: #59f5a7;
+  color: #000;
 }
 .maincontainer .restPg {
   display:flex;
@@ -188,33 +201,37 @@
 .maincontainer .restPg .right{
   width: 50%;
 }
-.maincontainer .restPg   .box{
+.maincontainer .restPg .box{
   height: 100%;
   width: 100%;
   background: none;
-  margin-left: 20%;
+  margin-left: 15%;
+  margin-bottom: 2%;
   display: flex;
   flex-direction: column;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px;
 }
 .maincontainer  .ayur_text p {
   color: #5EF3AA;
   text-align: center;
   font-size: 40px;
+  margin-top: 2%;
 }
 .maincontainer .restPg  .big{
   display: flex;
   flex-direction: column;
   width: 80%;
   height: 100%;
+  /* font-family: "Poppins", sans-serif; */
 }
 .maincontainer .restPg  .box{
   background:white;
   height: 120px;
-  width: 500px;
+  width: 600px;
   display: flex;
   flex-direction: row;
   margin-top: 3%;
+  box-shadow: 2.5px 5px 7px 2px rgba(103, 250, 105, 0.676);
 }
 .maincontainer .restPg  .box .img img{
   width: 100px;
@@ -222,16 +239,18 @@
   margin-top: 4%;
   margin-left: 10%;
   justify-content: center;
-  border-radius: 2px`;
+  border-radius: 2px;
   
 }
 .maincontainer .restPg  .box  .big .name{
-  margin-left: 7%;
+  margin-left: 5%;
+  margin-top: 2%;
   height: 25%;
 }
 .maincontainer .restPg  .box  .big .name p{
   font-weight: 800;
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 .maincontainer .restPg .box .big .dandse{
   margin-left: 5%;
