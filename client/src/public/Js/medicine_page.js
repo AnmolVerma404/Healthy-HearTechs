@@ -30,38 +30,43 @@ const searchTextFunc = async () => {
 			const resp = await axios.post(backendUrl + '/api/medical/search', {
 				searchText,
 			});
+            document.getElementById('jsAyurvediDiv').innerHTML="";
+            document.getElementById('jsAllopathicDiv').innerHTML="";
 			searchText = '';
-			document.querySelector('.jsInput').setAttribute('value', '');
+            document.querySelector('.jsInput').value="";
+            console.log('Running');
 			const { message, ayurvedic, allopathic } = resp.data;
+            const data = {
+                message,
+                count : 0
+            }
 			if (ayurvedic.length > 0) {
-				updateAyurvedic(ayurvedic);
+				updateAyurvedic(ayurvedic,data);
 			}
 			if (allopathic.length > 0) {
-				updateAllopathic(allopathic);
+				// updateAllopathic(allopathic,data);
 			}
 		} catch (error) {}
 	});
 };
 
-const updateAyurvedic = ayurvedic => {
+const updateAyurvedic = (ayurvedic,data) => {
 	for (var i = 0; i < ayurvedic.length && i < 3; ++i) {
 		// console.log(ayurvedic[i]);
-		ayurMedShow(ayurvedic[i], i);
+        data.count++;
+		ayurMedShow(ayurvedic[i],data);
 	}
 };
 
-const updateAllopathic = allopathic => {
+const updateAllopathic = (allopathic,data) => {
 	for (var i = 0; i < allopathic.length && i < 3; ++i) {
 		// console.log(allopathic[i]);
+        data.count++;
+        // alloMedShow(allopathic[i],data)
 	}
 };
 
-const ayurMedShow = ({ name, dosage, side_effect, symptoms }, i) => {
-	console.log("name",name);
-	console.log("dosage",dosage);
-	console.log("side_effect",side_effect);
-	console.log("symptoms",symptoms);
-	console.log("i",i);
+const ayurMedShow = ({ name, dosage, side_effect, symptoms },{count}) => {
     var side_effectList = "",symptomsList = "";
 
     for(var se = 0;se<side_effect.length && se<2;++se){
@@ -77,35 +82,82 @@ const ayurMedShow = ({ name, dosage, side_effect, symptoms }, i) => {
     }
 	const ayurvedicDiv = document.getElementById('jsAyurvediDiv');
 	ayurvedicDiv.innerHTML += `
-        <div class="box" id="box${i+1}">
-        <div class="img" id="img1">
-            <img src="../../image/about_us_img1.jpg">
+    <div class="box" id="box${count}">
+    <div class="img" id="img${count}">
+        <img src="../../image/about_us_img1.jpg">
+    </div>
+    <div class="big">
+        <div class="name" id="name${count}">
+            <p>${name}</p>
         </div>
-        <div class="big">
-            <div class="name" id="name1">
-                <p>${name}</p>
+        <div class="dandse">
+            <div class="dosage" id="dosage${count}">
+                <p><span>Dosage:</span>${dosage}</p>
             </div>
-            <div class="dandse">
-                <div class="dosage" id="dosage1">
-                    <p><span>Dosage:</span>${dosage}</p>
-                </div>
-                <div class="side_effects" id="side_effects1">
-                    <p>Side Effects:</p>
-                    <ul id="jsSideEffects">
-                        ${side_effectList}
-                    </ul>
-                </div>
-            </div>
-            <div class="causes" id="causes1">
-                <p>Causes:</p>
-                <ul>
-                    ${symptomsList}
+            <div class="side_effects" id="side_effects${count}">
+                <p>Side Effects:</p>
+                <ul id="jsSideEffects">
+                    ${side_effectList}
                 </ul>
             </div>
         </div>
+        <div class="causes" id="causes${count}">
+            <p>Symptoms:</p>
+            <ul>
+                ${symptomsList}
+            </ul>
         </div>
+    </div>
+    </div>
     `;
 };
+
+const alloMedShow = ({ name, dosage, side_effect, symptoms },{count}) =>{
+
+    var side_effectList = "",symptomsList = "";
+
+    for(var se = 0;se<side_effect.length && se<2;++se){
+        side_effectList+=`
+        <li>${side_effect[se].name}</li>
+        `
+    }
+    
+    for(var sy = 0;sy<symptoms.length && sy<3;++sy){
+        symptomsList+=`
+        <li>${symptoms[sy].name}</li>
+        `
+    }
+	const allopathicDiv = document.getElementById('jsAllopathicDiv');
+	allopathicDiv.innerHTML += `
+    <div class="box" id="'box${count}">
+    <div class="img" id="img4">
+        <img src="../../image/about_us_img1.jpg">
+    </div>
+    <div class="big">
+        <div class="name" id="name4">
+            <p>${name}</p>
+        </div>
+        <div class="dandse">
+            <div class="dosage" id="dosage4">
+                <p><span>Dosage:</span>${dosage}</p>
+            </div>
+            <div class="side_effects" id="side_effects4">
+                <p>Side Effects:</p>
+                <ul>
+                    ${side_effectList}
+                </ul>
+            </div>
+        </div>
+        <div class="causes" id="causes4">
+            <p>Symptoms:</p>
+            <ul>
+                ${symptoms}
+            </ul>
+        </div>
+    </div>
+    </div>
+    `;
+}
 
 fetchSearchText();
 searchTextFunc();
