@@ -35,8 +35,7 @@
   justify-content: center;
   align-items: center;
   margin: 0% auto;
-  /* border-radius: 40px; */
-  background-color: #ffffff21;
+  background-color: #ffffff15;
 }
 .maincontainer .headerPg .leftHeader {
   height: 100%;
@@ -50,16 +49,25 @@
   padding: 1rem 1rem 1rem 1rem;
 }
 .maincontainer .headerPg .leftHeader .logoSvgDiv .svgLogo {
-  height: 36px;
+  height: 4rem;
 }
 .maincontainer .headerPg .leftHeader .textlogoDiv {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
+
+.maincontainer .headerPg .leftHeader .textlogoDiv .heartPulseImgDiv .heartPulseImg {
+  height: 4rem;
+  margin-right: 120px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
 .maincontainer .headerPg .leftHeader .textlogoDiv .websiteNameDiv .websiteName {
-  font-size: 25px;
+  margin-right: 100px;
+  font-size: 15px;
 }
 .maincontainer .headerPg .rightHeader {
   height: 100%;
@@ -92,7 +100,7 @@
   color: #0000;
 }
 .maincontainer .headerPg .rightHeader .navBar ul li a:hover {
-  color: #efc28b;
+  color: #a3efac;
 }
 .maincontainer .restPg {
   height: 90%;
@@ -104,25 +112,25 @@
 }
 .maincontainer .restPg .leftPg {
   height: 100%;
-  width: 40%;
+  width: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 .maincontainer .restPg .leftPg .googleMap {
-  height: 90%;
+  height: 95%;
   width: 90%;
-  box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.25);
+  margin-left: 10%;
+  box-shadow: -15px 15px 10px 1px rgba(0, 0, 0, 0.411);
 }
 .maincontainer .restPg .leftPg .googleMap iframe {
-  border: none;
+  border: node;
   height: 100%;
   width: 100%;
   border-radius: 2rem;
 }
 .maincontainer .restPg .rightPg {
   height: 100%;
-  width: 45%;
+  width: 50%;
   margin-left: 5%;
   display: flex;
   flex-direction: row;
@@ -137,14 +145,17 @@
   align-items: center;
 }
 .maincontainer .restPg .rightPg .form .formHeading {
-  height: 10%;
+  height: auto;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: -5% 0% 5% 30%;
 }
 .maincontainer .restPg .rightPg .form .formHeading h1 {
   font-size: 3.2rem;
-  color: #00ff82;
-  margin: 14px;
-  padding: 10px;
+  color: #54ffac;
+  text-shadow: 5px 3px 5px #000000;
+  padding-top: 20px;
 }
 .maincontainer .restPg .rightPg .form .formContent {
     height: 80%;
@@ -154,22 +165,25 @@
 .maincontainer .restPg .rightPg .form .formContent form{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     height: 100%;
 }
 
 .maincontainer .restPg .rightPg .form .formContent form input{
-    padding: 32px;
+    padding: 30px 20px;
     border-radius: 40px;
-    margin: 10px;
+    margin-bottom: 20px;
+    margin-left: 5rem;
     font-size: 20px;
     font-weight: 500;
+    box-shadow: 0.5px 3px 3px 1px rgba(0, 0, 0, 0.568);
 }
 
 .maincontainer .restPg .rightPg .form .formContent form input[type="submit"]{
     background-color: rgb(20, 61, 8);
     color: white;
-    margin: 5% auto;
+    margin-top: 10px;
+    margin-left: 35%;
     border-radius: 10px;
     width: 40%;
     cursor: pointer;

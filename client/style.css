@@ -906,7 +906,7 @@
   align-items: center;
 }
 .maincontainer .pageFive .lowerPgFive .pgfLDiv {
-  background: hsla(151deg, 100%, 8%, 0.72);
+  background: hsla(151, 100%, 8%, 0.72);
   height: 80%;
   width: 80%;
   margin: 2rem;
