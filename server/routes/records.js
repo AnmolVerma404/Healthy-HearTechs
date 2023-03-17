@@ -1,13 +1,13 @@
 import express from "express";
 import { body } from "express-validator";
 
-import { isAuth } from "../middleware/is-auth";
-import { saveRecords } from "../controllers/records";
+import { isAuth } from "../middleware/is-auth.js";
+import { saveRecords } from "../controllers/records.js";
 
 const router = express.Router();
 
 router.post(
-  "/records",
+  "/",
   isAuth,
   [
     body("doctorName").trim().isLength({ min: 3 }),
