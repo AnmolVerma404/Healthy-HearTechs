@@ -26,8 +26,8 @@ const RecordSchema = Schema(
       required: true,
       minlength: 3,
     },
-    appointmentDate: {
-      type: Date,
+    appointDate: {
+      type: String,
       required: true,
     },
   },

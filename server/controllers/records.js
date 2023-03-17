@@ -16,8 +16,7 @@ export const saveRecords = async (req, res, next) => {
   const { doctorName, phone, hospitalName, medicalCondition, appointDate } =
     req.body;
   try {
-    const userData = jwt.verify(req.body.jwt, process.env.JWT_KEY);
-    const userId = userData.userId;
+    const userId = req.currentUser.userId;
     const record = new Record({
       userId,
       doctorName,
