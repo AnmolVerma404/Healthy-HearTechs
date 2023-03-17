@@ -1,195 +1,215 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
-  --white: #ffffff;
-  --black: #000000;
-  --teal: #09a7a1;
-  --orange: #ff8000;
-  --raspbarry: #ff007a;
-  --neon-pink: #ff14bd;
-  --cream-brown: #31202b;
-  --cyan: #00ffff;
-  --midnight-voilet: #1f242d;
-  --groung-green: #07252d;
-  --text-btn-main-color: #54bf8b;
+	--white: #ffffff;
+	--black: #000000;
+	--teal: #09a7a1;
+	--orange: #ff8000;
+	--raspbarry: #ff007a;
+	--neon-pink: #ff14bd;
+	--cream-brown: #31202b;
+	--cyan: #00ffff;
+	--midnight-voilet: #1f242d;
+	--groung-green: #07252d;
+	--text-btn-main-color: #54bf8b;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  font-size: 10px;
-  overflow: hidden;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	overflow: hidden;
 }
 
 .maincontainer {
-  height: 100vh;
-  width: 100vw;
-  background: url("../../../image/history_bg.png") no-repeat center center/cover;
+	height: 100vh;
+	width: 100vw;
+	background: url('../../../image/history_bg.png') no-repeat center center/cover;
 }
 
 .maincontainer .headerPg {
-  height: 10%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0% auto;
-  background-color: #ffffff15;
+	height: 10%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0% auto;
+	background-color: #ffffff15;
 }
 .maincontainer .headerPg .leftHeader {
-  height: 100%;
-  width: 30%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+	height: 100%;
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 .maincontainer .headerPg .leftHeader .logoSvgDiv {
-  padding: 1rem 1rem 1rem 1rem;
+	padding: 1rem 1rem 1rem 1rem;
 }
 .maincontainer .headerPg .leftHeader .logoSvgDiv .svgLogo {
-  height: 4rem;
+	height: 4rem;
 }
 .maincontainer .headerPg .leftHeader .textlogoDiv {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: left;
 }
 
-.maincontainer .headerPg .leftHeader .textlogoDiv .heartPulseImgDiv .heartPulseImg {
-  height: 4rem;
-  margin-right: 120px;
-  margin-top: 10px;
-  margin-bottom: -10px;
+.maincontainer
+	.headerPg
+	.leftHeader
+	.textlogoDiv
+	.heartPulseImgDiv
+	.heartPulseImg {
+	height: 4rem;
+	margin-right: 120px;
+	margin-top: 10px;
+	margin-bottom: -10px;
 }
 
 .maincontainer .headerPg .leftHeader .textlogoDiv .websiteNameDiv .websiteName {
-  margin-right: 100px;
-  font-size: 15px;
+	margin-right: 100px;
+	font-size: 15px;
 }
 .maincontainer .headerPg .rightHeader {
-  height: 100%;
-  width: 70%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  margin-right: 2%;
+	height: 100%;
+	width: 70%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	margin-right: 2%;
 }
 .maincontainer .headerPg .rightHeader .navBar ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .maincontainer .headerPg .rightHeader .navBar ul li button {
-  background-color: transparent;
-  border: none;
-  padding: 1rem;
+	background-color: transparent;
+	border: none;
+	padding: 1rem;
 }
 .maincontainer .headerPg .rightHeader .navBar ul li a {
-  cursor: pointer;
-  font-size: 2rem;
-  font-weight: 700;
-  text-decoration: none;
-  border: none;
-  padding: 3rem;
-  color: black;
+	cursor: pointer;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	border: none;
+	padding: 3rem;
+	color: black;
 }
 .maincontainer .headerPg .rightHeader .navBar ul li a:visited {
-  color: #0000;
+	color: #0000;
 }
 .maincontainer .headerPg .rightHeader .navBar ul li a:hover {
-  color: #a3efac;
+	color: #a3efac;
 }
 .maincontainer .restPg {
-  height: 90%;
-  width: 100%;
-  margin: 1% 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	height: 90%;
+	width: 100%;
+	margin: 1% 0%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .maincontainer .restPg .leftPg {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  
+	height: 100%;
+	width: 50%;
+	display: flex;
 }
 .maincontainer .restPg .leftPg .googleMap {
-  height: 95%;
-  width: 90%;
-  margin-left: 10%;
-  box-shadow: -15px 15px 10px 1px rgba(0, 0, 0, 0.411);
+	height: 95%;
+	width: 90%;
+	margin-left: 10%;
+	box-shadow: -15px 15px 10px 1px rgba(0, 0, 0, 0.411);
 }
 .maincontainer .restPg .leftPg .googleMap iframe {
-  border: node;
-  height: 100%;
-  width: 100%;
-  border-radius: 2rem;
+	border: node;
+	height: 100%;
+	width: 100%;
+	border-radius: 2rem;
 }
 .maincontainer .restPg .rightPg {
-  height: 100%;
-  width: 50%;
-  margin-left: 5%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+	height: 100%;
+	width: 50%;
+	margin-left: 5%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 .maincontainer .restPg .rightPg .form {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .maincontainer .restPg .rightPg .form .formHeading {
-  height: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  margin: -5% 0% 5% 30%;
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin: -5% 0% 5% 30%;
 }
 .maincontainer .restPg .rightPg .form .formHeading h1 {
-  font-size: 3.2rem;
-  color: #54ffac;
-  text-shadow: 5px 3px 5px #000000;
-  padding-top: 20px;
+	font-size: 3.2rem;
+	color: #54ffac;
+	text-shadow: 5px 3px 5px #000000;
+	padding-top: 20px;
 }
 .maincontainer .restPg .rightPg .form .formContent {
-    height: 80%;
-    width: 100%;
+	height: 80%;
+	width: 100%;
 }
 
-.maincontainer .restPg .rightPg .form .formContent form{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 100%;
+.maincontainer .restPg .rightPg .form .formContent form {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	height: 100%;
 }
 
-.maincontainer .restPg .rightPg .form .formContent form input{
-    padding: 30px 20px;
-    border-radius: 40px;
-    margin-bottom: 20px;
-    margin-left: 5rem;
-    font-size: 20px;
-    font-weight: 500;
-    box-shadow: 0.5px 3px 3px 1px rgba(0, 0, 0, 0.568);
+.maincontainer .restPg .rightPg .form .formContent form input {
+	padding: 30px 20px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+	margin-left: 5rem;
+	font-size: 20px;
+	font-weight: 500;
+	box-shadow: 0.5px 3px 3px 1px rgba(0, 0, 0, 0.568);
 }
 
-.maincontainer .restPg .rightPg .form .formContent form input[type="submit"]{
-    background-color: rgb(20, 61, 8);
-    color: white;
-    margin-top: 10px;
-    margin-left: 35%;
-    border-radius: 10px;
-    width: 40%;
-    cursor: pointer;
-    line-height: 0%;
+.maincontainer .restPg .rightPg .form .formContent form button {
+	padding: 30px 20px;
+	border-radius: 40px;
+	margin-bottom: 20px;
+	margin-left: 5rem;
+	font-size: 20px;
+	font-weight: 500;
+	box-shadow: 0.5px 3px 3px 1px rgba(0, 0, 0, 0.568);
 }
 
-.maincontainer .restPg .rightPg .form .formContent form input[type="submit"]:hover{
-    background-color: #25c075;
+.maincontainer .restPg .rightPg .form .formContent form button[type='submit'] {
+	background-color: rgb(20, 61, 8);
+	color: white;
+	margin-top: 10px;
+	margin-left: 35%;
+	border-radius: 10px;
+	width: 40%;
+	cursor: pointer;
+	line-height: 0%;
+}
+
+.maincontainer
+	.restPg
+	.rightPg
+	.form
+	.formContent
+	form
+	input[type='submit']:hover {
+	background-color: #25c075;
 }

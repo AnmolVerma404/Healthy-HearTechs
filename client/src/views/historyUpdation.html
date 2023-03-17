@@ -1,72 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History Updation</title>
-    <link rel="stylesheet" href="../public/css/historyUpdation.css">
-</head>
-<body>
-    <div class="maincontainer">
-        <div class="headerPg">
-            <div class="leftHeader">
-              <div class="logoSvgDiv">
-                <img src="../../svg/webLogo.svg" class="svgLogo" />
-              </div>
-              <div class="textlogoDiv">
-                <div class="heartPulseImgDiv">
-                  <img src="../../image/heart pulse.png" class="heartPulseImg" />
-                </div>
-                <div class="websiteNameDiv">
-                  <h3 class="websiteName">Healthy HearTechs</h3>
-                </div>
-              </div>
-            </div>
-            <div class="rightHeader">
-              <div class="navBar">
-                <ul>
-                  <li>
-                    <button><a href="#pageOne">Home</a></button>
-                  </li>
-                  <li>
-                    <button><a href="#pageTwo">About Us</a></button>
-                  </li>
-                  <li>
-                    <button><a href="#pageThree">Service</a></button>
-                  </li>
-                  <li>
-                    <button><a href="#pageSix">FAQ</a></button>
-                  </li>
-                  <li>
-                    <button><a href="#footerMainDiv">Contact</a></button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </div>
-        <div class="restPg">
-          <div class="leftPg">
-            <div class="googleMap" id="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.3366032366356!2d77.393282407982!3d23.256448077428345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c681c61386b19%3A0xa706c43437308978!2sRaja%20Bhoj%20Statue!5e0!3m2!1sen!2sin!4v1658672096952!5m2!1sen!2sin" width="600" height="450" srtyle="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-          <div class="rightPg">
-            <div class="form">
-              <div class="formHeading"><h1>Update your Records here!</h1></div>
-              <div class="formContent">
-                <form>
-                  <input type="text" placeholder="Doctor Name">
-                  <input type="text" placeholder="Mobile No.">
-                  <input type="text" placeholder="Hospital Name">
-                  <input type="text" placeholder="Medical Condition">
-                  <input type="date">
-                  <input type="submit" value="Update">
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>History Updation</title>
+		<link rel="icon" href="../../svg/webLogoRed.svg" type="image/x-icon" />
+		<link rel="stylesheet" href="../public/css/historyUpdation.css" />
+	</head>
+	<body>
+		<div class="maincontainer">
+			<div class="headerPg">
+				<div class="leftHeader">
+					<div class="logoSvgDiv">
+						<img src="../../svg/webLogo.svg" class="svgLogo" />
+					</div>
+					<div class="textlogoDiv">
+						<div class="heartPulseImgDiv">
+							<img src="../../image/heart pulse.png" class="heartPulseImg" />
+						</div>
+						<div class="websiteNameDiv">
+							<h3 class="websiteName">Healthy HearTechs</h3>
+						</div>
+					</div>
+				</div>
+				<div class="rightHeader">
+					<div class="navBar">
+						<ul>
+							<li>
+								<button><a href="#pageOne">Home</a></button>
+							</li>
+							<li>
+								<button><a href="#pageTwo">About Us</a></button>
+							</li>
+							<li>
+								<button><a href="#pageThree">Service</a></button>
+							</li>
+							<li>
+								<button><a href="#pageSix">FAQ</a></button>
+							</li>
+							<li>
+								<button><a href="#footerMainDiv">Contact</a></button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="restPg">
+				<div class="leftPg">
+					<div class="googleMap" id="map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.3366032366356!2d77.393282407982!3d23.256448077428345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c681c61386b19%3A0xa706c43437308978!2sRaja%20Bhoj%20Statue!5e0!3m2!1sen!2sin!4v1658672096952!5m2!1sen!2sin"
+							width="600"
+							height="450"
+							srtyle="border:0;"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+				</div>
+				<div class="rightPg">
+					<div class="form">
+						<div class="formHeading"><h1>Update your Records here!</h1></div>
+						<div class="formContent">
+							<form id="jsHistoryForm">
+								<input
+									type="text"
+									placeholder="Doctor Name"
+									id="jsDoctorName"
+								/>
+								<input type="text" placeholder="Mobile No." id="jsPhone" />
+								<input
+									type="text"
+									placeholder="Hospital Name"
+									id="jsHospitalName"
+								/>
+								<input
+									type="text"
+									placeholder="Medical Condition"
+									id="jsMedicalCondition"
+								/>
+								<input type="date" id="jsAppointDate" />
+								<button type="submit" id="jsFormSubmit">Update</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../public/Js/historyUpdation.js" type="module"></script>
+	</body>
 </html>
