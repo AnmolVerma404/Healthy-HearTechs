@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --teal: #09a7a1;
+  --orange: #ff8000;
+  --raspbarry: #ff007a;
+  --neon-pink: #ff14bd;
+  --cream-brown: #31202b;
+  --cyan: #00ffff;
+  --midnight-voilet: #1f242d;
+  --groung-green: #07252d;
+  --text-btn-main-color: #54bf8b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  overflow: hidden;
+
+}
+
+.maincontainer {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../../../client/image/medicine_header.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.maincontainer .headerPgOne {
+  height: 10%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  /* background-image:url("../../../../client/image/medicine_header.jpeg"); */
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00000035;
+}
+
+.maincontainer .headerPgOne .leftHeader {
+  height: 100%;
+  width: 30rem;
+  /* background-color: var(--raspbarry); */
+  display: flex;
+  flex-direction: row;
+}
+
+.maincontainer .headerPgOne .leftHeader .logoSvgDiv {
+  padding: 1rem 0rem 0rem 1rem;
+}
+
+.maincontainer .headerPgOne .leftHeader .logoSvgDiv .svgLogo {
+  height: 5rem;
+}
+
+.maincontainer .headerPgOne .leftHeader .textlogoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.maincontainer .headerPgOne .leftHeader .textlogoDiv .heartPulseImgDiv .heartPulseImg {
+  height: 5.2rem;
+}
+
+.maincontainer .headerPgOne .leftHeader .textlogoDiv .websiteNameDiv .websiteName {
+  margin-top: 0.4rem;
+  font-size: 1.6rem;
+  color: black;
+}
+
+.maincontainer .headerPgOne .rightHeader {
+  height: 100%;
+  width: 124rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.maincontainer .headerPgOne .rightHeader .navBar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maincontainer .headerPgOne .rightHeader .navBar ul li {
+  margin: 2rem;
+}
+
+.maincontainer .headerPgOne .rightHeader .navBar ul li button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  padding: 1rem;
+}
+
+.maincontainer .headerPgOne .rightHeader .navBar ul li a {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  padding: 1rem;
+  color: #fff;
+}
+
+.maincontainer .headerPgOne .rightHeader .navBar ul li a:visited {
+  color: #fff;
+}
+
+.maincontainer .headerPgOne .rightHeader .navBar ul li a:hover {
+  color: #000;
+}
+
+.maincontainer .headerPgOne .rightHeader .buttonMakeApp {
+  margin-right: 2rem;
+}
+
+.maincontainer .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton {
+  cursor: pointer;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #5bb98b;
+  border: none;
+}
+
+.maincontainer .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton .appointmentAnchor {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.maincontainer .headerPgOne .rightHeader .buttonMakeApp .makeAppointmentButton:hover {
+  background-color: #17d978;
+}
+
+.maincontainer .restPg {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center;
+  justify-content: center; */
+  height: 90%;
+  width: 100%;
+}
+
+.maincontainer .restPg .leftside {
+  display: flex;
+  /* align-items: center; */
+  height: 90%;
+  /* justify-content: center; */
+  width: 25%;
+  /* border: 2px solid palegoldenrod; */
+}
+
+.maincontainer .restPg .leftside .content {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  margin-left: 12%;
+  margin-top: 8%;
+  width: 75%;
+  border-radius: 12px;
+  background-size: cover;
+  background: white;
+}
+.maincontainer .restPg .leftside .content .info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.maincontainer .restPg .leftside .content .info .upperhalf {
+  display: flex;
+  flex-direction: column;
+  height: 45%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.maincontainer .restPg .leftside .info .img {
+  display: flex;
+  justify-content: center;
+}
+.maincontainer .restPg .leftside .info .img img {
+  /* width: 40%;
+  height: 30%; */
+  border-radius: 100px;
+  height: 120px;
+  width: 120px;
+  
+}
+.maincontainer .restPg .leftside .info  .upperhalf .Name{
+  font-weight: 800;
+  font-size: 30px;
+}
+.maincontainer .restPg .leftside .info  .upperhalf .email{
+  font-size: 15px;
+}
+.maincontainer .restPg .leftside .content .info .lowerhalf {
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+  width: 100%;
+  margin-top: 10%;
+  padding-top: 10px;
+  align-items: center;
+}
+.maincontainer .restPg .leftside .content .info .lowerhalf .phone , .dob , .address{
+  display:flex;
+  padding: 10px;
+}
+.maincontainer .restPg .leftside .content .info .lowerhalf .table table, td{
+  font-size: 15px;
+}
+.maincontainer .restPg .leftside .content .info .lowerhalf .table td{
+  color: rgb(97, 97, 97);
+  width: 100px;
+}
+.maincontainer .restPg .leftside .content .info .lowerhalf .table #mob, #bdate, #add{
+  color: black;
+  font-size: 16px;
+  font-weight: 550;
+}
+.maincontainer .restPg .leftside .content .info .lowerhalf .appoint , #count{
+  font-weight: 800;
+  font-size: 16px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+.maincontainer .restPg .rightside {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 90%;
+  margin-left: 1%;
+  /* border: 2px solid palegoldenrod; */
+}
+.maincontainer .restPg .rightside .img2{
+  height: 40%;
+  box-shadow: #000;
+  margin-top: 1%;
+  width: 100%;
+  border-radius: 7px;
+  margin-top: 3%;
+  display:flex;
+  background-image: url('../../../image/medicine_right.png ');
+  background-size: cover;
+}
+.maincontainer .restPg .rightside  .img2 img{
+  box-shadow: #000;
+  margin-top: 1%;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  margin-top: 3%;
+  display:flex;
+}
+.maincontainer .restPg .rightside .rightbottom{
+  margin-top: 3%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  border: 2px solid black;
+  background-color: #032E0A;
+  border-radius: 7px;
+}
+.maincontainer .restPg .rightside .rightbottom .heading{
+  margin-top: 2%;
+  margin-left: 1.5%;
+  font-size: 25px;
+  color: #5EF3AA;
+  font-weight: bold;
+}
+.maincontainer .restPg .rightside .rightbottom .history{
+  display: flex;
+  height: 90%;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.maincontainer .restPg .rightside .rightbottom .history .record1{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 2%;
+  margin-left: 1.5%;
+  width: 95%;
+  height: 40%;
+  border-radius: 7px;
+}
+.maincontainer .restPg .rightside .rightbottom .history .record1 .upper{
+  display: flex;
+  flex-direction: row;
+}
+.maincontainer .restPg .rightside .rightbottom .history .record1 .upper #med1{
+  display: flex;
+  font-size: 20px;
+  margin-left:4%;
+  margin-top: 1%;
+  font-weight: 800;
+}
+.maincontainer .restPg .rightside .rightbottom .history .record1 .upper #date1{
+  margin-top: 1%;
+  font-weight: 800;
+  font-size: 20px;
+  margin-left: 35%;
+}
+.maincontainer .restPg .rightside .rightbottom .history .record1 #hos1{
+  display: flex;
+  font-size: 20px;
+  margin-left:4%;
+  margin-top: 1%;
+  font-weight: 800;
+}
+.maincontainer .restPg .rightside .rightbottom .history .record2{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 2%;
+  margin-left: 1.5%;
+  width: 95%;
+  height: 40%;
+  border-radius: 7px;
+}
+.maincontainer .restPg .rightside .rightbottom .history .record2 .upper{
+  display: flex;
+  flex-direction: row;
+}
+.maincontainer .restPg .rightside .rightbottom .history .record2 .upper #med2{
+  display: flex;
+  font-size: 20px;
+  margin-left:4%;
+  margin-top: 1%;
+  font-weight: 800;
+}
+.maincontainer .restPg .rightside .rightbottom .history .record2 .upper #date2{
+  margin-top: 1%;
+  font-weight: 800;
+  font-size: 20px;
+  margin-left: 35%;
+}
+.maincontainer .restPg .rightside .rightbottom .history .record2 #hos2{
+  display: flex;
+  font-size: 20px;
+  margin-left:4%;
+  margin-top: 1%;
+  font-weight: 800;
+}
