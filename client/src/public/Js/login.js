@@ -18,6 +18,7 @@ submit.addEventListener("click", async (event) => {
       document.cookie = `jwt=${response.data.token}; path=/`;
       window.location.href = "../../index.html";
     } catch (error) {
+      swal(error.response.data.message, error.response.status.toString(), "error");
       console.log(error);
     }
   } else {

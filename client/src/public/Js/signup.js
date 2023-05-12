@@ -22,6 +22,7 @@ submit.addEventListener('click', async e => {
             });
             window.location.href = '/src/views/signin.html';
         } catch (error) {
+            swal(error.response.data.message, error.response.status.toString(), "error");
             console.log(error);
         }
 	} else {

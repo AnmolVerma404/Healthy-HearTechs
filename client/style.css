@@ -484,15 +484,19 @@
   height: 3rem;
   width: 15rem;
   margin-top: 2rem;
-  font-size: 1.5rem;
   color: #fff;
   border: none;
   background-color: #5bb98b;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
   border-radius: 0.5rem;
   box-shadow: 0.5rem 0rem 21px -1rem black, -0.5rem 0rem 10px -1rem black;
   cursor: pointer;
+}
+.maincontainer .pageTwo .restPgTwo .pageTwoBottom .grassButton button a {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.01rem;
+  text-decoration: none;
 }
 .maincontainer .pageThree {
   height: 100vh;
@@ -713,13 +717,15 @@
   font-size: 2.5rem;
 }
 .maincontainer .pageFour .pg4ReadMore {
-  font-size: 2rem;
-  font-weight: 900;
   color: #fff;
   height: 4.5rem;
   width: 25rem;
   overflow: hidden;
   background-color: #54bf8b;
+}
+.maincontainer .pageFour .pg4ReadMore a {
+  font-size: 2rem;
+  font-weight: 900;
 }
 .maincontainer .pageFour .cardsPg4 {
   display: flex;
@@ -746,10 +752,10 @@
   font-family: sans-serif;
   font-size: 2.5rem;
   text-align: left;
-  margin: 2rem;
+  margin: 1.2rem 2rem;
 }
 .maincontainer .pageFour .cardsPg4 .cardsRow .card p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: left;
   margin: 0 2rem;
 }

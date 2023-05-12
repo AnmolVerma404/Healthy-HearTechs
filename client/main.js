@@ -1,7 +1,6 @@
 import axios from 'axios';
 import cookie from 'cookie';
 import { backendUrl } from './src/utils/url';
-
 const isAuthenticated = async () => {
 	const isAuth = document.getElementById('jsAuth');
 	const userEl = document.getElementById('jsUserName');
