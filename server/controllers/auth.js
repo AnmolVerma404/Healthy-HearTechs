@@ -76,6 +76,7 @@ export const login = async (req, res, next) => {
 			{
 				email: loadedUser.email,
 				name:loadedUser.name,
+				phone_number:loadedUser.phone_number,
 				userId: loadedUser._id.toString(),
 			},
 			process.env.JWT_KEY,
