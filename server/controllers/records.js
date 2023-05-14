@@ -15,8 +15,8 @@ export const saveRecords = async (req, res, next) => {
   }
   const { doctorName, phone, hospitalName, medicalCondition, appointDate } =
     req.body;
-  try {
-    const userId = req.currentUser.userId;
+    try {
+      const userId = req.currentUser.userId;
     const record = new Record({
       userId,
       doctorName,

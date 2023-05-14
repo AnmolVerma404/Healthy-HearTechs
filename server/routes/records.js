@@ -14,7 +14,6 @@ router.post(
     body("phone").trim().isLength({ min: 10 }),
     body("hospitalName").trim().isLength({ min: 3 }),
     body("medicalCondition").trim().isLength({ min: 3 }),
-    // body("appointDate").isDate(),
   ],
   saveRecords
 );

@@ -278,10 +278,15 @@
 								}
 							}
 
-							button {
+							a {
 								border: none;
 								padding: 2rem;
 								width: 15rem;
+								background-color: #fff;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								text-decoration: none;
 								border-radius: 2rem;
 								box-shadow: 0.5rem 0rem 21px -1rem black,
 									-0.5rem 0rem 10px -1rem black;

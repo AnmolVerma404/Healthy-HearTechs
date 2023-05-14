@@ -4,6 +4,7 @@ import { backendUrl } from './src/utils/url';
 const isAuthenticated = async () => {
 	const isAuth = document.getElementById('jsAuth');
 	const userEl = document.getElementById('jsUserName');
+	const profileButton = document.getElementById('jsProfileButton');
 	try {
 		const cookieObj = cookie.parse(document.cookie);
 		const response = await axios.post(backendUrl + '/api/auth/user', {
@@ -16,6 +17,7 @@ const isAuthenticated = async () => {
 			isAuth.href = './src/views/signout.html';
 			isAuth.classList.add('jsOut');
 			userEl.innerText = name.length > 6 ? name.substring(0, 5) + '...' : name;
+			profileButton.href = '/src/views/records.html';
 		} else {
 			isAuth.innerText = 'Sign Up/In';
 			isAuth.classList.remove('jsOut');
