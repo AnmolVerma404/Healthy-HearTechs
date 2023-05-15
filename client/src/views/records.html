@@ -66,10 +66,10 @@
                             <div class="img">
                                 <img src="../../../client/image/about_us_img1.jpg"></a>
                             </div>
-                            <div class="Name">
+                            <div id="jsName" class="Name">
                                 Patient Name
                             </div>
-                            <div class="email">
+                            <div id="jsEmail" class="email">
                                 patient@gmail.com
                             </div>
                         </div>
@@ -77,7 +77,7 @@
                             <table class="table">
                                 <tr class="phone">
                                     <td> Phone No</td>
-                                    <td id="mob">1234567890</td>
+                                    <td class="jsPhoneNumber" id="mob">1234567890</td>
                                 </tr>
                                 <tr class="dob">
                                     <td>DOB</td>
@@ -89,7 +89,7 @@
                                 </tr>
                             </table>
                             <div class="appoint">
-                                Appointment Count - <span id="count">10</span>
+                                Appointment Count - <span class="jsRecordCount" id="count">10</span>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                     <div class="heading">
                         Medical Records
                     </div>
-                    <div class="history">
+                    <div class="jsHistory history">
                         <div class="record1">
                             <div class="upper">
                                 <span id="med1"> Dabur Honitus Herbal Cough Remedy Syrup </span>
@@ -123,6 +123,9 @@
             </div>
         </div>
     </div>
+
+    <script src="../public/Js/record.js" type="module"></script>
+
 </body>
 
 </html>

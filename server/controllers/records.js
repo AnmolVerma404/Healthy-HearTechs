@@ -5,6 +5,23 @@ import { Record } from '../models/records.js';
 
 dotenv.config();
 
+export const getAllRecords = async (req,res,next) =>{
+  const errors = validationResult(req);
+
+  if (!errors.isEmpty()) {
+    const error = new Error("Validation failed! Entered data is invalid");
+    error.statusCode = 422;
+    return next(error);
+  }
+  
+  const userId = req.currentUser.userId;
+  const record = await Record.find({userId});
+  res.status(201).json({
+    message: "All the record were successfully retrieved!!!",
+    record
+  });
+}
+
 export const saveRecords = async (req, res, next) => {
   const errors = validationResult(req);
 
