@@ -1,5 +1,7 @@
 import axios from "axios";
 import { backendUrl } from "../../utils/url";
+import Swal from 'sweetalert2';
+import { Toast } from '../../utils/swal';
 
 const submit = document.getElementById("jsSubmitButton");
 
@@ -16,9 +18,18 @@ submit.addEventListener("click", async (event) => {
       });
       console.log("Coolkie: ",response.data.token);
       document.cookie = `jwt=${response.data.token}; path=/`;
+      await Toast.fire({
+        icon: 'success',
+        title: 'Logging you inside'
+      });
       window.location.href = "../../index.html";
     } catch (error) {
-      swal(error.response.data.message, error.response.status.toString(), "error");
+			Swal.fire({
+				icon: 'error',
+				title: error.response.status.toString(),
+				text:error.response.data.message,
+			});
+      // swal(error.response.data.message, error.response.status.toString(), "error");
       console.log(error);
     }
   } else {
