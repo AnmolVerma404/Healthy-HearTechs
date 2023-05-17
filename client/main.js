@@ -25,6 +25,7 @@ const isAuthenticated = async () => {
 		}
 	} catch (error) {
 		console.log('No cookie found');
+		profileButton.href = '/src/views/signup.html';
 		isAuth.innerText = 'Sign Up/In';
 		isAuth.href = './src/views/signup.html';
 	}
