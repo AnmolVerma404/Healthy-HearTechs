@@ -34,17 +34,30 @@ const setFrontEnd = (userData,records) =>{
     historyEl.innerHTML = "";
     let historyText = "";
     // for(let i = 0;i<recordSize;++i){ //css change
-    for(let i = 0;i<2;++i){
+    if(recordSize == 0){
         historyText+=`
         <div class="record1">
             <div class="upper">
-                <span id="med1">${records[i].medicalCondition} </span>
-                <span id="date1">${records[i].appointDate}</span>
+                <span id="med1"></span>
+                <span id="date1"></span>
             </div>
             <br>
-            <span id="hos1">Hospital Name - ${records[i].hospitalName}, Doctor Name - ${records[i].doctorName}</span>
+            <span id="hos1">No Record found!!!<span>
         </div>
         `
+    }else{
+        for(let i = 0;i<2 && i<recordSize;++i){
+            historyText+=`
+            <div class="record1">
+                <div class="upper">
+                    <span id="med1">${records[i].medicalCondition} </span>
+                    <span id="date1">${records[i].appointDate}</span>
+                </div>
+                <br>
+                <span id="hos1">Hospital Name - ${records[i].hospitalName}, Doctor Name - ${records[i].doctorName}</span>
+            </div>
+            `
+        }
     }
     historyEl.innerHTML+=historyText;
 }

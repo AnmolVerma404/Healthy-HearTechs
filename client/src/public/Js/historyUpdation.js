@@ -1,6 +1,8 @@
 import axios from 'axios';
 import cookie from 'cookie';
 import { backendUrl } from '../../utils/url';
+import Swal from 'sweetalert2';
+import { Toast } from '../../utils/swal';
 
 const formSubmit = document.getElementById('jsFormSubmit');
 
@@ -12,6 +14,15 @@ formSubmit.addEventListener('click', async e => {
 	const medicalCondition = document.getElementById('jsMedicalCondition').value;
 	const appointDate = document.getElementById('jsAppointDate').value;
 	const cookieObj = cookie.parse(document.cookie);
+	console.log(cookieObj.jwt);
+	if (cookieObj.jwt == 'null') {
+		Swal.fire({
+			icon: 'warning',
+			title: "Error 401",
+			text: "Sign Up/In First Please!!!",
+		});
+		return;
+	}
 	try {
 		const response = await axios.post(backendUrl + '/api/record', {
 			doctorName,
@@ -19,17 +30,26 @@ formSubmit.addEventListener('click', async e => {
 			hospitalName,
 			medicalCondition,
 			appointDate,
-			jwt: cookieObj.jwt
+			jwt: cookieObj.jwt,
 		});
 
 		if (response.status === 201) {
 			console.log('Added successfully');
+			await Toast.fire({
+				icon: 'success',
+				title: 'Updating your Records',
+			});
 			document.getElementById('jsHistoryForm').reset();
-			window.location.href = "../../index.html";
+			window.location.href = '../../index.html';
 		} else if (response.status == 500) {
 			console.log('Backend Error');
 		}
 	} catch (error) {
+		Swal.fire({
+			icon: 'error',
+			title: error.response.status.toString(),
+			text:error.response.data.message,
+		});
 		console.log('Error:', error);
 	}
 });
