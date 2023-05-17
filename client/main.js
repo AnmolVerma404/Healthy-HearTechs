@@ -1,6 +1,8 @@
 import axios from 'axios';
 import cookie from 'cookie';
 import { backendUrl } from './src/utils/url';
+import Swal from 'sweetalert2';
+
 const isAuthenticated = async () => {
 	const isAuth = document.getElementById('jsAuth');
 	const userEl = document.getElementById('jsUserName');
@@ -31,18 +33,26 @@ const isAuthenticated = async () => {
 	}
 };
 
-const homeSearch = () =>{
+const homeSearch = () => {
 	const searchButton = document.getElementById('jsHomeSearch');
 
-	searchButton.addEventListener('click',(e)=>{
+	searchButton.addEventListener('click', e => {
 		e.preventDefault();
 		const searchText = document.getElementById('jsHomeSearchText').value;
-		if(searchText.length>1){
-			window.localStorage.setItem('searchText',searchText);
-			window.location.href = "./src/views/medicine_page.html";
+		if (searchText.length == 0) {
+			Swal.fire({
+				icon: 'warning',
+				title: 'No Condition',
+				text: 'Please enter a condition to search!!!',
+			});
+			return;
 		}
-	})
-}
+		if (searchText.length > 1) {
+			window.localStorage.setItem('searchText', searchText);
+			window.location.href = './src/views/medicine_page.html';
+		}
+	});
+};
 
 isAuthenticated();
 homeSearch();
