@@ -1,0 +1,16 @@
+{
+	"name": "healthy-heartechs",
+	"version": "1.0.0",
+	"description": "Welcome to our health website, where you can find information and solutions for common health problems.",
+	"main": "index.js",
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"firebase": "^9.23.0"
+	}
+}
