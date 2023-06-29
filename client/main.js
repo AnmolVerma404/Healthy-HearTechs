@@ -1,7 +1,9 @@
 // import axios from 'axios';
-import cookie from 'cookie';
+// import cookie from 'cookie';
+// import Swal from 'sweetalert2';
+import cookie from 'https://cdn.jsdelivr.net/npm/cookie@0.5.0/+esm';
+import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/+esm';
 import { backendUrl } from './src/utils/url';
-import Swal from 'sweetalert2';
 
 const isAuthenticated = async () => {
 	const isAuth = document.getElementById('jsAuth');

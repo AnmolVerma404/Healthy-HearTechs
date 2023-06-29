@@ -1,5 +1,6 @@
 // import axios from 'axios';
-import cookie from 'cookie';
+// import cookie from 'cookie';
+import cookie from 'https://cdn.jsdelivr.net/npm/cookie@0.5.0/+esm';
 import { backendUrl } from '../../utils/url';
 
 const getAllRecord = async () =>{
