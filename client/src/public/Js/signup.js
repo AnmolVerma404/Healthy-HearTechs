@@ -1,6 +1,6 @@
 import Swal from 'sweetalert2';
 import { Toast } from '../../utils/swal';
-import axios from 'axios';
+// import axios from 'axios';
 import { backendUrl } from '../../utils/url';
 
 const submit = document.getElementById('jsButtonSubmit');

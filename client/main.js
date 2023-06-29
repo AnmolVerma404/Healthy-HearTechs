@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import cookie from 'cookie';
 import { backendUrl } from './src/utils/url';
 import Swal from 'sweetalert2';
